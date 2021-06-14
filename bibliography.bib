@@ -1,0 +1,1461 @@
+%%% ====================================================================
+%%%  BibTeX-file{
+%%%     author          = "Gerry Murray",
+%%%     version         = "1.2",
+%%%     date            = "2 April 2012",
+%%%     filename        = "acmsmall-sample-bibfile.bib",
+%%%     address         = "ACM, NY",
+%%%     email           = "murray at hq.acm.org",
+%%%     codetable       = "ISO/ASCII",
+%%%     keywords        = "ACM Reference Format, bibliography, citation, references",
+%%%     supported       = "yes",
+%%%     docstring       = "This BibTeX database file contains 'bibdata' entries
+%%%                        that 'match' the examples provided in the Specifications Document
+%%%                        AND, also, 'legacy'-type bibs. It should assist authors in
+%%%                        choosing the 'correct' at-bibtype and necessary bib-fields
+%%%                        so as to obtain the appropriate ACM Reference Format output.
+%%%                        It also contains many 'Standard Abbreviations'. "
+%%%  }
+%%% ====================================================================
+
+% Journals
+
+% First the Full Name is given, then the abbreviation used in the AMS Math
+% Reviews, with an indication if it could not be found there.
+% Note the 2nd overwrites the 1st, so swap them if you want the full name.
+
+ %{AMS}
+ @String{AMSTrans = "American Mathematical Society Translations" }
+ @String{AMSTrans = "Amer. Math. Soc. Transl." }
+ @String{BullAMS = "Bulletin of the American Mathematical Society" }
+ @String{BullAMS = "Bull. Amer. Math. Soc." }
+ @String{ProcAMS = "Proceedings of the American Mathematical Society" }
+ @String{ProcAMS = "Proc. Amer. Math. Soc." }
+ @String{TransAMS = "Transactions of the American Mathematical Society" }
+ @String{TransAMS = "Trans. Amer. Math. Soc." }
+
+ %ACM
+ @String{CACM = "Communications of the {ACM}" }
+ @String{CACM = "Commun. {ACM}" }
+ @String{CompServ = "Comput. Surveys" }
+ @String{JACM = "J. ACM" }
+ @String{ACMMathSoft = "{ACM} Transactions on Mathematical Software" }
+ @String{ACMMathSoft = "{ACM} Trans. Math. Software" }
+ @String{SIGNUM = "{ACM} {SIGNUM} Newsletter" }
+ @String{SIGNUM = "{ACM} {SIGNUM} Newslett." }
+
+ @String{AmerSocio = "American Journal of Sociology" }
+ @String{AmerStatAssoc = "Journal of the American Statistical Association" }
+ @String{AmerStatAssoc = "J. Amer. Statist. Assoc." }
+ @String{ApplMathComp = "Applied Mathematics and Computation" }
+ @String{ApplMathComp = "Appl. Math. Comput." }
+ @String{AmerMathMonthly = "American Mathematical Monthly" }
+ @String{AmerMathMonthly = "Amer. Math. Monthly" }
+ @String{BIT = "{BIT}" }
+ @String{BritStatPsych = "British Journal of Mathematical and Statistical
+          Psychology" }
+ @String{BritStatPsych = "Brit. J. Math. Statist. Psych." }
+ @String{CanMathBull = "Canadian Mathematical Bulletin" }
+ @String{CanMathBull = "Canad. Math. Bull." }
+ @String{CompApplMath = "Journal of Computational and Applied Mathematics" }
+ @String{CompApplMath = "J. Comput. Appl. Math." }
+ @String{CompPhys = "Journal of Computational Physics" }
+ @String{CompPhys = "J. Comput. Phys." }
+ @String{CompStruct = "Computers and Structures" }
+ @String{CompStruct = "Comput. \& Structures" }
+ @String{CompJour = "The Computer Journal" }
+ @String{CompJour = "Comput. J." }
+ @String{CompSysSci = "Journal of Computer and System Sciences" }
+ @String{CompSysSci = "J. Comput. System Sci." }
+ @String{Computing = "Computing" }
+ @String{ContempMath = "Contemporary Mathematics" }
+ @String{ContempMath = "Contemp. Math." }
+ @String{Crelle = "Crelle's Journal" }
+ @String{GiornaleMath = "Giornale di Mathematiche" }
+ @String{GiornaleMath = "Giorn. Mat." } % didn't find in AMS MR., ibid.
+
+ @String{SIGCOMM = "Proc. ACM SIGCOMM"}
+ @String{SIGMETRICS = "Proc. ACM SIGMETRICS"}
+ @String{IMC = "Proc. ACM IMC"}
+
+ @String{INFOCOM = "Proc. IEEE INFOCOM"}
+
+ %IEEE
+ @String{Computer = "{IEEE} Computer" }
+ @String{IEEETransComp = "{IEEE} Transactions on Computers" }
+ @String{IEEETransComp = "{IEEE} Trans. Comput." }
+ @String{IEEETransAC = "{IEEE} Transactions on Automatic Control" }
+ @String{IEEETransAC = "{IEEE} Trans. Automat. Control" }
+ @String{IEEESpec = "{IEEE} Spectrum" } % didn't find in AMS MR
+ @String{ProcIEEE = "Proceedings of the {IEEE}" }
+ @String{ProcIEEE = "Proc. {IEEE}" } % didn't find in AMS MR
+ @String{IEEETransAeroElec = "{IEEE} Transactions on Aerospace and Electronic
+     Systems" }
+ @String{IEEETransAeroElec = "{IEEE} Trans. Aerospace Electron. Systems" }
+
+ @String{IMANumerAna = "{IMA} Journal of Numerical Analysis" }
+ @String{IMANumerAna = "{IMA} J. Numer. Anal." }
+ @String{InfProcLet = "Information Processing Letters" }
+ @String{InfProcLet = "Inform. Process. Lett." }
+ @String{InstMathApp = "Journal of the Institute of Mathematics and
+     its Applications" }
+ @String{InstMathApp = "J. Inst. Math. Appl." }
+ @String{IntControl = "International Journal of Control" }
+ @String{IntControl = "Internat. J. Control" }
+ @String{IntNumerEng = "International Journal for Numerical Methods in
+     Engineering" }
+ @String{IntNumerEng = "Internat. J. Numer. Methods Engrg." }
+ @String{IntSuper = "International Journal of Supercomputing Applications" }
+ @String{IntSuper = "Internat. J. Supercomputing Applic." } % didn't find
+%% in AMS MR
+ @String{Kibernetika = "Kibernetika" }
+ @String{JResNatBurStand = "Journal of Research of the National Bureau
+     of Standards" }
+ @String{JResNatBurStand = "J. Res. Nat. Bur. Standards" }
+ @String{LinAlgApp = "Linear Algebra and its Applications" }
+ @String{LinAlgApp = "Linear Algebra Appl." }
+ @String{MathAnaAppl = "Journal of Mathematical Analysis and Applications" }
+ @String{MathAnaAppl = "J. Math. Anal. Appl." }
+ @String{MathAnnalen = "Mathematische Annalen" }
+ @String{MathAnnalen = "Math. Ann." }
+ @String{MathPhys = "Journal of Mathematical Physics" }
+ @String{MathPhys = "J. Math. Phys." }
+ @String{MathComp = "Mathematics of Computation" }
+ @String{MathComp = "Math. Comp." }
+ @String{MathScand = "Mathematica Scandinavica" }
+ @String{MathScand = "Math. Scand." }
+ @String{TablesAidsComp = "Mathematical Tables and Other Aids to Computation" }
+ @String{TablesAidsComp = "Math. Tables Aids Comput." }
+ @String{NumerMath = "Numerische Mathematik" }
+ @String{NumerMath = "Numer. Math." }
+ @String{PacificMath = "Pacific Journal of Mathematics" }
+ @String{PacificMath = "Pacific J. Math." }
+ @String{ParDistComp = "Journal of Parallel and Distributed Computing" }
+ @String{ParDistComp = "J. Parallel and Distrib. Comput." } % didn't find
+%% in AMS MR
+ @String{ParComputing = "Parallel Computing" }
+ @String{ParComputing = "Parallel Comput." }
+ @String{PhilMag = "Philosophical Magazine" }
+ @String{PhilMag = "Philos. Mag." }
+ @String{ProcNAS = "Proceedings of the National Academy of Sciences
+                    of the USA" }
+ @String{ProcNAS = "Proc. Nat. Acad. Sci. U. S. A." }
+ @String{Psychometrika = "Psychometrika" }
+ @String{QuartMath = "Quarterly Journal of Mathematics, Oxford, Series (2)" }
+ @String{QuartMath = "Quart. J. Math. Oxford Ser. (2)" }
+ @String{QuartApplMath = "Quarterly of Applied Mathematics" }
+ @String{QuartApplMath = "Quart. Appl. Math." }
+ @String{RevueInstStat = "Review of the International Statisical Institute" }
+ @String{RevueInstStat = "Rev. Inst. Internat. Statist." }
+
+ %SIAM
+ @String{JSIAM = "Journal of the Society for Industrial and Applied
+     Mathematics" }
+ @String{JSIAM = "J. Soc. Indust. Appl. Math." }
+ @String{JSIAMB = "Journal of the Society for Industrial and Applied
+     Mathematics, Series B, Numerical Analysis" }
+ @String{JSIAMB = "J. Soc. Indust. Appl. Math. Ser. B Numer. Anal." }
+ @String{SIAMAlgMeth = "{SIAM} Journal on Algebraic and Discrete Methods" }
+ @String{SIAMAlgMeth = "{SIAM} J. Algebraic Discrete Methods" }
+ @String{SIAMAppMath = "{SIAM} Journal on Applied Mathematics" }
+ @String{SIAMAppMath = "{SIAM} J. Appl. Math." }
+ @String{SIAMComp = "{SIAM} Journal on Computing" }
+ @String{SIAMComp = "{SIAM} J. Comput." }
+ @String{SIAMMatrix = "{SIAM} Journal on Matrix Analysis and Applications" }
+ @String{SIAMMatrix = "{SIAM} J. Matrix Anal. Appl." }
+ @String{SIAMNumAnal = "{SIAM} Journal on Numerical Analysis" }
+ @String{SIAMNumAnal = "{SIAM} J. Numer. Anal." }
+ @String{SIAMReview = "{SIAM} Review" }
+ @String{SIAMReview = "{SIAM} Rev." }
+ @String{SIAMSciStat = "{SIAM} Journal on Scientific and Statistical
+     Computing" }
+ @String{SIAMSciStat = "{SIAM} J. Sci. Statist. Comput." }
+
+ @String{SoftPracExp = "Software Practice and Experience" }
+ @String{SoftPracExp = "Software Prac. Experience" } % didn't find in AMS MR
+ @String{StatScience = "Statistical Science" }
+ @String{StatScience = "Statist. Sci." }
+ @String{Techno = "Technometrics" }
+ @String{USSRCompMathPhys = "{USSR} Computational Mathematics and Mathematical
+     Physics" }
+ @String{USSRCompMathPhys = "{U. S. S. R.} Comput. Math. and Math. Phys." }
+ @String{VLSICompSys = "Journal of {VLSI} and Computer Systems" }
+ @String{VLSICompSys = "J. {VLSI} Comput. Syst." }
+ @String{ZAngewMathMech = "Zeitschrift fur Angewandte Mathematik und
+     Mechanik" }
+ @String{ZAngewMathMech = "Z. Angew. Math. Mech." }
+ @String{ZAngewMathPhys = "Zeitschrift fur Angewandte Mathematik und Physik" }
+ @String{ZAngewMathPhys = "Z. Angew. Math. Phys." }
+
+% Publishers % ================================================= |
+
+ @String{Academic = "Academic Press" }
+ @String{ACMPress = "{ACM} Press" }
+ @String{AdamHilger = "Adam Hilger" }
+ @String{AddisonWesley = "Addison-Wesley" }
+ @String{AllynBacon = "Allyn and Bacon" }
+ @String{AMS = "American Mathematical Society" }
+ @String{Birkhauser = "Birkha{\"u}ser" }
+ @String{CambridgePress = "Cambridge University Press" }
+ @String{Chelsea = "Chelsea" }
+ @String{ClaredonPress = "Claredon Press" }
+ @String{DoverPub = "Dover Publications" }
+ @String{Eyolles = "Eyolles" }
+ @String{HoltRinehartWinston = "Holt, Rinehart and Winston" }
+ @String{Interscience = "Interscience" }
+ @String{JohnsHopkinsPress = "The Johns Hopkins University Press" }
+ @String{JohnWileySons = "John Wiley and Sons" }
+ @String{Macmillan = "Macmillan" }
+ @String{MathWorks = "The Math Works Inc." }
+ @String{McGrawHill = "McGraw-Hill" }
+ @String{NatBurStd = "National Bureau of Standards" }
+ @String{NorthHolland = "North-Holland" }
+ @String{OxfordPress = "Oxford University Press" }  %address Oxford or London?
+ @String{PergamonPress = "Pergamon Press" }
+ @String{PlenumPress = "Plenum Press" }
+ @String{PrenticeHall = "Prentice-Hall" }
+ @String{SIAMPub = "{SIAM} Publications" }
+ @String{Springer = "Springer-Verlag" }
+ @String{TexasPress = "University of Texas Press" }
+ @String{VanNostrand = "Van Nostrand" }
+ @String{WHFreeman = "W. H. Freeman and Co." }
+
+@misc{RFC4950,
+title={{RFC} 4950},
+url = {https://tools.ietf.org/html/rfc4950},
+year = {2007},
+lastaccessed ={September 12, 2018}
+}
+
+@misc{ark,
+title={Ark},
+url = {https://www.caida.org/projects/ark/locations},
+lastaccessed ={September 12, 2018}
+}
+
+@misc{usc-dataset,
+title={{USC/ISI} {ANT} Datasets},
+url = {https://ant.isi.edu/datasets/all.html},
+lastaccessed ={September 12, 2018}
+} 
+
+@misc{ple,
+  title={{PlanetLab} {Europe}},
+  howpublished={\url{https://www.planet-lab.eu}},
+  lastaccessed ={September, 2019}
+}
+
+@misc{cisco-load-balancing-configuration,
+title={Configuring a Load-Balancing Scheme},
+howpublished={\url{https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/ipswitch_cef/configuration/xe-3s/isw-cef-xe-3s-book/isw-cef-load-balancing.pdf}},
+  lastaccessed ={September, 2019}
+}
+
+
+@misc{cef-polarization,
+title={{CEF} Polarization},
+howpublished={\url{https://www.cisco.com/c/en/us/support/docs/ip/express-forwarding-cef/116376-technote-cef-00.html}},
+  lastaccessed ={September, 2019}
+}
+
+@misc{huawei-polarization,
+title={Understanding the Hash Algorithm},
+howpublished={\url{https://support.huawei.com/enterprise/en/doc/EDOC1100086965}},
+  lastaccessed ={September, 2019}
+}
+
+@misc{juniper-polarization,
+title={Understanding the Algorithm Used to Hash {LAG} Bundle and Egress Next-Hop {ECMP} Traffic ({QFX} 10002 and {QFX} 10008 Switches)},
+howpublished={\url{https://www.juniper.net/documentation/en_US/junos/topics/concept/interfaces-hashing-lag-ecmp-understanding-\\10002-10008.html}},
+  lastaccessed ={September, 2019}
+}
+
+@misc{juniper-load-balancing,
+title={Understanding the Algorithm Used to Load Balance Traffic on {MX} Series Routers},
+howpublished={\url{https://www.juniper.net/documentation/en_US/junos/topics/concept/hash-computation-mpcs-understanding.html
+}},
+  lastaccessed ={September, 2019}
+}
+
+@misc{huawei-load-balancing,
+title={Per-Flow and Per-Packet Load Balancing},
+howpublished={\url{https://support.huawei.com/enterprise/en/doc/EDOC1100055041/ebc8ad42}},
+  lastaccessed ={September, 2019}
+}
+
+@misc{cisco-load-balancing,
+title={Troubleshooting Load Balancing Over Parallel Links Using Cisco Express Forwarding},
+howpublished={\url{https://www.cisco.com/c/en/us/support/docs/ip/express-forwarding-cef/18285-loadbal-cef.html#internalmech}},
+  lastaccessed ={September, 2019}
+}
+@misc{juniper-resilient-hashing,
+title={Resilient Hashing on {LAGs} and {ECMP} groups},
+howpublished={\url{https://www.juniper.net/documentation/en_US/junos/topics/topic-map/switches-interface-resilient-hashing.html}},
+  lastaccessed ={September, 2019}
+}
+@misc{iana-ipv4-special,
+title={{IANA} {IPv4} Special-Purpose Address Registry},
+howpublished={\url{https://www.iana.org/assignments/iana-ipv4-special-registry/iana-ipv4-special-registry.xhtml}},
+  lastaccessed ={September, 2019}
+}
+
+@misc{clickhouse-documentation,
+title={{Clickhouse Documentation
+}},
+howpublished={\url{https://clickhouse.yandex/docs/en/}},
+  lastaccessed ={September, 2019}
+}
+
+@misc{website-validation,
+title={{Website for topology validation
+}},
+howpublished={\url{http://heartbeat.planet-lab.eu}},
+  lastaccessed ={January, 2019}
+}
+
+@misc{modern-traceroute-for-linux,
+  title={Traceroute for Linux},
+  howpublished={\url {http://traceroute.sourceforge.net}},
+  lastaccessed ={September, 2019}
+}
+
+@misc{route-views,
+  title={Oregon Route Views},
+  howpublished={\url {http://www.routeviews.org/}},
+  lastaccessed ={September, 2019}
+}
+@misc{clickhouse,
+  title={ClickHouse — open source distributed column-oriented {DBMS}},
+  howpublished={\url {https://clickhouse.yandex}},
+  lastaccessed ={September, 2019}
+}
+
+
+
+
+@misc{jacobson1988traceroute,
+  title={{4BSD} routing diagnostic tool available for ftp},
+  author={Jacobson, Van},
+  year={1988},
+  howpublished={Email 8812201313.AA03127@helios.ee.lbl.gov to the IETF and end2end-interest e-mail lists}
+}
+
+@article{Augustin:2011:MMR:2042972.2042989,
+ author = {Augustin, Brice and Friedman, Timur and Teixeira, Renata},
+ title = {Measuring Multipath Routing in the {Internet}},
+ journal = {IEEE/ACM Transactions on Networking},
+ issue_date = {June 2011},
+ volume = {19},
+ number = {3},
+ month = jun,
+ year = {2011},
+ issn = {1063-6692},
+ pages = {830--840},
+ numpages = {11},
+ acmid = {2042989},
+ publisher = {IEEE Press},
+ address = {Piscataway, NJ, USA}
+} 
+
+@inproceedings{augustin2006exhaustive,
+  title={Exhaustive Path Tracing With {Paris} Traceroute},
+  author={Augustin, Brice and Friedman, Timur and Teixeira, Renata},
+  booktitle={Proc. ACM CoNEXT '07},
+  year={2006}
+}
+
+@article{ccr2015-philipp-richter-ipv4scarcity,
+    author  = "Philipp Richter and Mark Allman and Randy Bush and Vern Paxson",
+    title = "{A Primer on IPv4 Scarcity}",
+    journal = "ACM Computer Communication Review",
+    volume  = {45},
+    number  = {2},
+    year  = 2015,
+    month = apr,
+    note  =  "Editorial Contribution",
+}
+
+@inproceedings{open-resolver-project-oarch2019,
+  title={Open Resolver Project revisited},
+  author={Jared Mauch},
+  booktitle={OARC 31},
+  year={2019}
+}
+
+@inproceedings{passive-observations-google-dns,
+  title={Passive Observations of a Large {DNS} Service: 2.5 Years in the Life of {G}oogle},
+  author={Wouter de Vries and Roland van Rijswijk-Deij and Pieter-Tjerk de Boer
+ and Aiko Pras},
+  booktitle={TMA},
+  year={2018}
+}
+
+@inproceedings{open-dns-resolvers,
+  title={Where Are You Taking Me? Behavioral Analysis of Open {DNS} Resolvers},
+  author={Jeman Park and Aminollah Khormali and Manar Mohaisen and Aziz Mohaisen},
+  booktitle={IEEE/IFIP DSN},
+  year={2019}
+}
+
+@inproceedings{Augustin:2006:ATA:1177080.1177100,
+ author = {Augustin, Brice and Cuvellier, Xavier and Orgogozo, Benjamin and Viger, Fabien and Friedman, Timur and Latapy, Matthieu and Magnien, Cl{\'e}mence and Teixeira, Renata},
+ title = {Avoiding Traceroute Anomalies with {Paris} Traceroute},
+ booktitle = {Proc. ACM IMC '06},
+ year = {2006}
+} 
+
+@inproceedings{impact-of-blocklisting,
+ author = {Sivaramakrishnan Ramanathan and Anushah Hossain and Jelena Mirkovic and Minlan Yu and Sadia Afroz},
+ title = {Quantifying the Impact of Blocklisting in the Age of Address Reuse},
+ booktitle = {IMC},
+ year = {2020}
+} 
+
+@inproceedings{ad-injection,
+ author = {Kurt Thomas and Elie Bursztein and Chris Grier and Grant Ho and Nav Jagpal and Alexandros Kapravelos and Damon McCoy and Antonio Nappa and Vern Paxson and Paul Pearce and Niels Provos and Moheeb Abu Rajab},
+ title = {Ad injection at scale: Assessing deceptive advertisement modifications},
+ booktitle = {IEEE Symposium on Security and Privacy},
+ year = {2015}
+} 
+
+@inproceedings{ghost-clicks,
+ author = {Sumayah A. Alrwais and Alexandre Gerber and Christopher W. Dunn and Oliver Spatscheck and Minaxi Gupta and Eric Osterweil},
+ title = {Dissecting ghost clicks: ad fraud via misdirected human clicks},
+ booktitle = {ACSAC},
+ year = {2012}
+} 
+
+@article{blocklist-babel,
+	Author = {Alvaro Feal, Pelayo Vallina and Julien Gamba and Sergio Pastrana and Antonio Nappa and Oliver Hohlfeld and Narseo Vallina-Rodriguez and Juan Tapiador},
+	Journal = {IEEE Transactions on Network and Service Management},
+	Month = apr,
+	Year = {2021}
+}
+
+@article{viger2008detection,
+	Author = {Viger, Fabien and Augustin, Brice and Cuvellier, Xavier and Magnien, Cl{\'e}mence and Latapy, Matthieu and Friedman, Timur and Teixeira, Renata},
+	Journal = {Computer Networks},
+	Month = apr,
+	Number = {5},
+	Pages = {998--1018},
+	Title = {Detection, Understanding, and Prevention of Traceroute Measurement Artifacts},
+	Volume = {52},
+	Year = {2008}
+}
+
+@InProceedings{internet-mapping,
+       author = {claffy, kc and Hyun, Young and Keys, Ken and Fomenkov, Marina and Krioukov, Dmitri}, 
+       title = {Internet Mapping: From Art to Science},
+       booktitle = {IEEE DHS Cybersecurity Applications and Technologies Conference for Homeland Security (CATCH)},
+       @Pages = {205-211},
+       Institution = {Cooperative Association for {Internet} Data Analysis (CAIDA)},
+       @Month = {Mar},
+       Year = {2009},
+       Keywords = {active data analysis   measurement methodology   topology}
+}
+
+@inproceedings{veitch:hal-01298261,
+  TITLE = {Failure Control in Multipath Route Tracing},
+  AUTHOR = {Veitch, Darryl and Augustin, Brice and Teixeira, Renata and Friedman, Timur},
+  BOOKTITLE = {Proc. IEEE Infocom '09},
+  year = {2009}
+}
+
+@inproceedings{beverly16yarrp,
+ author = {Beverly, Robert},
+ title = {Yarrp'ing the {Internet}: Randomized High-Speed Active Topology Discovery},
+ booktitle = {Proc. ACM IMC '16 },
+ keywords = {internet topology, network mapping},
+ year = {2016}
+} 
+
+@inproceedings{huffaker2002iffinder, 
+author={Bradley Huffaker and Daniel Plummer and David Moore and kc claffy}, 
+booktitle={Proc. '02 SAINT Workshops}, 
+title={Topology Discovery by Active Probing}, 
+year = {2002}
+}
+
+
+@inproceedings{meira2017characterization,
+  title={A Characterization of Load Balancing on the {IPv6} {Internet}},
+  author={Meira Jr, Wagner and Cunha, Italo},
+  booktitle={Proc. PAM '17},
+  year = {2017}
+}
+@inproceedings{Luckie:2016:BIB:2987443.2987467,
+ author = {Luckie, Matthew and Dhamdhere, Amogh and Huffaker, Bradley and Clark, David and claffy, kc},
+ title = {Bdrmap: Inference of Borders Between {IP} Networks},
+ booktitle = {Proc. ACM IMC '16 },
+ keywords = {internet topology, router ownership},
+ year = {2016}
+} 
+
+@inproceedings{beverly2018ip,
+  title={In the {IP} of the Beholder: Strategies for Active {IPv6} Topology Discovery},
+  author={Beverly, Robert and Durairajan, Ramakrishnan and Plonka, David and Rohrer, Justin P},
+  booktitle={Proc. ACM IMC '18},
+  year={2018}
+}
+
+@inproceedings{augustin2007multipath,
+  title={Multipath Tracing with {Paris} Traceroute},
+  author={Augustin, Brice and Friedman, Timur and Teixeira, Renata},
+  booktitle={Proc. E2EMON '07},
+  year={2007}
+}
+
+@inproceedings{jin19zooming,
+author = {Jin, Yuchen and Renganathan, Sundararajan and Ananthanarayanan, Ganesh and Jiang, Junchen and Padmanabhan, Venkata N. and Schroder, Manuel and Calder, Matt and Krishnamurthy, Arvind},
+title = {{Zooming in on Wide-Area Latencies to a Global Cloud Provider}},
+year = {2019},
+booktitle = SIGCOMM,
+}
+
+@article{Pansiot:1998:RMT:280549.280555,
+ author = {Pansiot, Jean-Jacques and Grad, Dominique},
+ title = {On Routes and Multicast Trees in the {Internet}},
+ journal = {ACM SIGCOMM Comput. Commun. Rev.},
+ issue_date = {Jan. 1998},
+ volume = {28},
+ number = {1},
+ month = jan,
+ year = {1998},
+ issn = {0146-4833},
+ pages = {41--50},
+ numpages = {10},
+ acmid = {280555},
+ publisher = {ACM},
+ address = {New York, NY, USA}
+} 
+
+@inproceedings{Vanaubel:2015:MUM:2815675.2815687,
+ author = {Vanaubel, Yves and M{\'e}rindol, Pascal and Pansiot, Jean-Jacques and Donnet, Benoit},
+ title = {{MPLS} Under the Microscope: Revealing Actual Transit Path Diversity},
+ booktitle = {Proc. ACM IMC '15},
+ keywords = {ecmp, ldp, mpls, multipath, network discovery, rsvp-te, traceroute, traffic engineering},
+ year = {2015}
+} 
+
+@inproceedings{Luckie:2008:TPM:1452520.1452557,
+ author = {Luckie, Matthew and Hyun, Young and Huffaker, Bradley},
+ title = {Traceroute Probe Method and Forward {IP} Path Inference},
+ booktitle = {Proc. ACM IMC '08},
+ keywords = {macroscopic {Internet} topology discovery, traceroute},
+ year = {2008}
+} 
+
+@inproceedings{Luckie:2010:SSE:1879141.1879171,
+ author = {Luckie, Matthew},
+ title = {Scamper: A Scalable and Extensible Packet Prober for Active Measurement of the {Internet}},
+ booktitle = {Proc. ACM IMC '10},
+keywords = {active measurement, software, tools},
+year = {2010}
+} 
+
+@inproceedings{almeida2017characterization,
+  title={A Characterization of Load Balancing on the {IPv6} {Internet}},
+  author={Almeida, Rafael and Fonseca, Osvaldo and Fazzion, Elverton and Guedes, Dorgival and Meira, Wagner and Cunha, {\'I}talo},
+  booktitle={Proc. PAM '17},
+  year = {2017}
+}
+
+@inproceedings{almeida20mca,
+    author = {Rafael L. C. Almeida and Italo Cunha and Renata Teixeira and
+Darryl Veitch and Christophe Diot},
+    title = {{Classification of Load Balancing in the Internet}},
+    booktitle = INFOCOM,
+    year = {2020},
+}
+    month = {April},
+    address = {Beijing, China}
+
+@inproceedings{ravaioli2015characterizing,
+  title={Characterizing {ICMP} Rate Limitation on Routers},
+  author={Ravaioli, Riccardo and Urvoy-Keller, Guillaume and Barakat, Chadi},
+  booktitle={Proc. ICC '15},
+  year={2015}
+}
+@inproceedings{cao2000performance,
+  title={Performance of Hashing-Based Schemes for {Internet} Load Balancing},
+  author={Cao, Zhiruo and Wang, Zheng and Zegura, Ellen},
+  booktitle={Proc. INFOCOM '00},
+  pages={332--341},
+  year={2000}
+}
+
+@inproceedings{jacquet:hal-01787252,
+  TITLE = {Collecter un nombre inconnu de coupons},
+  AUTHOR = {Jacquet, Philippe and Lamali, Mohamed Lamine and Mathieu, Fabien},
+  URL = {https://hal.inria.fr/hal-01787252},
+  BOOKTITLE = {CORES 2018 - Rencontres Francophones sur la Conception de Protocoles, l'{\'E}valuation de Performance et l'Exp{\'e}rimentation des R{\'e}seaux de Communication},
+  ADDRESS = {Roscoff, France},
+  PAGES = {1-4},
+  YEAR = {2018},
+  MONTH = May,
+  KEYWORDS = {M{\'e}trologie ; Equilibrage de charge ; Collecteur de coupons},
+  PDF = {https://hal.inria.fr/hal-01787252/file/Coupons_CoRes.pdf},
+  HAL_ID = {hal-01787252},
+  HAL_VERSION = {v1}
+}
+
+@article{Huffaker:2014:DDR:2656877.2656879,
+ author = {Huffaker, Bradley and Fomenkov, Marina and claffy, kc},
+ title = {{DRoP}: {DNS}-based Router Positioning},
+ journal = {ACM SIGCOMM Computer  Communication Review},
+ issue_date = {July 2014},
+ volume = {44},
+ number = {3},
+ month = jul,
+ year = {2014},
+ issn = {0146-4833},
+ pages = {5--13},
+ numpages = {9},
+ acmid = {2656879},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {active measurement, {Internet} toology, router geolocation, dns}
+}
+
+@inproceedings{marchetta2016and,
+  title={How and how much Traceroute Confuses our Understanding of Network Paths},
+  author={Marchetta, Pietro and Montieri, Antonio and Persico, Valerio and Pescap{\'e}, Antonio and Cunha, {\'I}talo and Katz-Bassett, Ethan},
+  booktitle={Proc. LANMAN '16},
+  year = {2016}
+  }
+
+@inproceedings{katz2010reverse,
+  title={Reverse Traceroute},
+  author={Katz-Bassett, Ethan and Madhyastha, Harsha V and Adhikari, Vijay Kumar and Scott, Colin and Sherry, Justine and Van Wesep, Peter and Anderson, Thomas E and Krishnamurthy, Arvind},
+  booktitle={Proc. NSDI '10},
+  year = {2010}
+} 
+ 
+@inproceedings{as-rank,
+       Author = {Luckie, M. and Huffaker, B. and claffy, k. and Dhamdhere, A. and Giotsas, V.}, 
+       Title = {{AS} Relationships, Customer Cones, and Validation},
+       BookTitle = {Proc. ACM IMC '13},
+       Year = {2013},
+       Keywords = {routing   topology   policy}
+}
+
+@article{Cunha:2014:DSP:2736196.2736197,
+ author = {Cunha, \'{I}talo and Teixeira, Renata and Veitch, Darryl and Diot, Christophe},
+ title = {{DTRACK}: A System to Predict and Track {Internet} Path Changes},
+ journal = {IEEE/ACM Transactions on Networking},
+ issue_date = {August 2014},
+ volume = {22},
+ number = {4},
+ month = aug,
+ year = {2014},
+ issn = {1063-6692},
+ pages = {1025--1038},
+ numpages = {14},
+ acmid = {2736197},
+ publisher = {IEEE Press},
+ address = {Piscataway, NJ, USA},
+ keywords = {path changes, topology mapping, tracking}
+} 
+
+@inproceedings{Sherry:2010:RIA:1879141.1879163,
+ author = {Sherry, Justine and Katz-Bassett, Ethan and Pimenova, Mary and Madhyastha, Harsha V. and Anderson, Thomas and Krishnamurthy, Arvind},
+ title = {Resolving {IP} Aliases with Prespecified Timestamps},
+ booktitle = {Proc. ACM IMC '10},
+ keywords = {alias resolution, ip options, ip timestamp},
+ year = {2010}
+}
+
+@inproceedings{marder2018pushing,
+  title={Pushing the Boundaries with {bdrmapIT}: Mapping Router Ownership at {Internet} Scale},
+  author={Marder, Alexander and Luckie, Matthew and Dhamdhere, Amogh and Huffaker, Bradley and Smith, Jonathan M and others},
+  booktitle={Proc. ACM IMC '18},
+  year={2018}
+}
+
+@article{Sherwood:2008:DDI:1402946.1402993,
+ author = {Sherwood, Rob and Bender, Adam and Spring, Neil},
+ title = {Discarte: A Disjunctive {Internet} Cartographer},
+ journal = {ACM SIGCOMM Computer Communincation  Review},
+ issue_date = {October 2008},
+ volume = {38},
+ number = {4},
+ month = aug,
+ year = {2008},
+ issn = {0146-4833},
+ pages = {303--314},
+ numpages = {12},
+ acmid = {1402993},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {alias resolution, discarte, disjunctive logic programming, network topology discovery, record route}
+} 
+
+@article{Keys:2010:IIA:1672308.1672318,
+ author = {Keys, Ken},
+ title = {Internet-scale {IP} Alias Resolution Techniques},
+ journal = {ACM SIGCOMM Computer Communication Review},
+ issue_date = {January 2010},
+ volume = {40},
+ number = {1},
+ month = jan,
+ year = {2010},
+ issn = {0146-4833},
+ pages = {50--55},
+ numpages = {6},
+ acmid = {1672318},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {alias resolution, ally, apar, discarte, iffinder, kapar, mercator, radargun}
+} 
+
+@article{Spring:2002:MIT:964725.633039,
+ author = {Spring, Neil and Mahajan, Ratul and Wetherall, David},
+ title = {Measuring {ISP} Topologies with Rocketfuel},
+ journal = {ACM SIGCOMM Computer Communication Review},
+ issue_date = {October 2002},
+ volume = {32},
+ number = {4},
+ month = aug,
+ year = {2002},
+ issn = {0146-4833},
+ pages = {133--145},
+ numpages = {13},
+ acmid = {633039},
+ publisher = {ACM},
+ address = {New York, NY, USA}
+} 
+
+@article{keysiffinder,
+  title={iffinder,” a tool for mapping interfaces to routers},
+  author={Keys, Ken},
+  journal={See http://www. caida. org/tools/measurement/iffinder}
+}
+
+@inproceedings{govindan2000heuristics,
+  title={Heuristics for {Internet} map discovery},
+  author={Govindan, Ramesh and Tangmunarunkit, Hongsuda},
+  booktitle={Proc. IEEE INFOCOM '00},
+  year = {2000}
+}
+ 
+@inproceedings{luckie2010scamper,
+  title={Scamper: a Scalable and Extensible Packet Prober for Active Measurement of the {Internet}},
+  author={Luckie, Matthew},
+  booktitle={Proc. ACM IMC '10},
+  year={2010}
+}
+
+@inproceedings{vermeulen2018multilevel,
+  title={Multilevel {MDA-Lite} {Paris} Traceroute},
+  author={Vermeulen, Kevin and Strowes, Stephen D and Fourmaux, Olivier and Friedman, Timur},
+  booktitle={Proc. ACM IMC '18},
+  year={2018},
+  organization={ACM}
+}
+
+@article{calvert1997modeling,
+  title={Modeling {Internet} Topology},
+  author={Calvert, Kenneth L and Doar, Matthew B and Zegura, Ellen W},
+  journal={IEEE Communications magazine},
+  volume={35},
+  number={6},
+  pages={160--163},
+  year={1997},
+  publisher={IEEE}
+}
+
+@article{faloutsos1999power,
+  title={On Power-Law Relationships of the {Internet} topology},
+  author={Faloutsos, Michalis and Faloutsos, Petros and Faloutsos, Christos},
+  journal={ACM SIGCOMM Computer Communication Review},
+  volume={29},
+  number={4},
+  pages={251--262},
+  year={1999},
+  organization={ACM}
+}
+
+@article{willinger2009mathematics,
+  title={Mathematics and the {Internet}: A Source of Enormous Confusion and Great Potential},
+  author={Willinger, Walter and Alderson, David and Doyle, John C},
+  journal={Notices of the American Mathematical Society},
+  volume={56},
+  number={5},
+  pages={586--599},
+  year={2009},
+  publisher={American Mathematical Society}
+}
+
+@article{paxson1999end,
+  title={End-to-End {Internet} Packet Dynamics},
+  author={Paxson, Vern},
+  journal={IEEE/ACM Transactions on Networking},
+  volume={7},
+  number={3},
+  pages={277--292},
+  year={1999},
+  publisher={IEEE}
+}
+
+@inproceedings{ager2012anatomy,
+  title={Anatomy of a Large {European} {IXP}},
+  author={Ager, Bernhard and Chatzis, Nikolaos and Feldmann, Anja and Sarrar, Nadi and Uhlig, Steve and Willinger, Walter},
+  booktitle={Proc. ACM SIGCOMM '12},
+  year={2012},
+  organization={ACM}
+}
+
+@misc{caidaitdk,
+  author = {CAIDA},
+  title = {The {CAIDA} Ark {IPv4} {Internet} Topology Data Kits Dataset},
+  note = "\url{http://www.impactcybertrust.org}",
+  year = {2019}
+}
+
+@inproceedings{Luckie:2017:IRO:3098822.3098858,
+ author = {Luckie, Matthew and Beverly, Robert},
+ title = {The Impact of Router Outages on the {AS}-level {Internet}},
+ booktitle = {Proc. ACM SIGCOMM '17},
+ year = {2017},
+ keywords = {BGP, {Internet} reliability, routing, single points of failure}
+}
+
+@article{5936160,
+	Author = {James P.G. Sterbenz and Egemen K. \c{C}etinkaya and Mahmood A. Hameed and Abdul Jabbar and Qian Shi and Justin P. Rohrer},
+	Journal = {Springer Telecommunication Systems},
+	Month = {February},
+	Number = {2},
+	Pages = {705--736},
+	Title = {Evaluation of Network Resilience, Survivability, and Disruption Tolerance: Analysis, Topology Generation, Simulation, and Experimentation},
+	Volume = {52},
+	Year = {2011}
+}
+
+@inproceedings{zhang2008ispy,
+ author = {Zhang, Zheng and Zhang, Ying and Hu, Y. Charlie and Mao, Z. Morley and Bush, Randy},
+ title = {{iSPY}: Detecting {IP} Prefix Hijacking on My Own},
+ booktitle = {Proceedings of the ACM SIGCOMM 2008 Conference on Data Communication},
+ series = {SIGCOMM '08},
+ year = {2008},
+ isbn = {978-1-60558-175-0},
+ location = {Seattle, WA, USA},
+ pages = {327--338},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/1402958.1402996},
+ doi = {10.1145/1402958.1402996},
+ acmid = {1402996},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {bgp, detection, hijacking, routing},
+} 
+
+@inproceedings{Krishnan:2009:MBE:1644893.1644917,
+ author = {Krishnan, Rupa and Madhyastha, Harsha V. and Srinivasan, Sridhar and Jain, Sushant and Krishnamurthy, Arvind and Anderson, Thomas and Gao, Jie},
+ title = {Moving Beyond End-to-End Path Information to Optimize {CDN} Performance},
+ booktitle = {Proc. ACM IMC '09},
+ year = {2009},
+ keywords = {content distribution networks, latency inflation, network troubleshooting}
+} 
+
+@inproceedings{Katz-Bassett:2006:TIG:1177080.1177090,
+ author = {Katz-Bassett, Ethan and John, John P. and Krishnamurthy, Arvind and Wetherall, David and Anderson, Thomas and Chawathe, Yatin},
+ title = {Towards {IP} Geolocation Using Delay and Topology Measurements},
+ booktitle = {Proc. ACM IMC '06},
+ year = {2006},
+ keywords = {delay measurements, geolocation, network topology, route measurements}
+} 
+
+@misc{hopps2000analysis,
+ author={Hopps, Christian E},
+ title = {Analysis of an Equal-Cost Multi-Path Algorithm},
+ series="Request for Comments",
+ number="2992",
+ howpublished="RFC 2992 (Informational)",
+ year = {2000},
+ publisher = {IETF},
+ organization="Internet Engineering Task Force",
+ month=nov,
+ url="https://tools.ietf.org/rfc/rfc2992.txt"
+} 
+
+@misc{rfc6890,
+  author={M. Cotton and L. Vegoda and R. Bonica and B. Haberman},
+  title={Special-Purpose {IP} Address Registries},
+  series="Request for Comments",
+  number="6890",
+  howpublished="RFC 6890 (Best Current Practice)",
+  publisher="IETF",
+  organization="Internet Engineering Task Force",
+  year=2013,
+  month=apr,
+    url="http://www.ietf.org/rfc/rfc6890.txt"
+}
+
+@inproceedings{cunha2011measuring,
+  title={{Measuring and Characterizing End-to-End Route Dynamics in the Presence of Load Balancing}},
+  author={Cunha, {\'I}talo and Teixeira, Renata and Diot, Christophe},
+  booktitle={Proc. PAM '11},
+  year={2011}
+}
+
+@article{paxson1997end,
+  title={End-to-end routing behavior in the Internet},
+  author={Paxson, Vern},
+  journal={IEEE/ACM transactions on Networking},
+  volume={5},
+  number={5},
+  pages={601--615},
+  year={1997},
+  publisher={IEEE}
+}
+@misc{ripeatlas,
+        Author = {{RIPE NCC}},
+        Note = {\url{https://atlas.ripe.net/}},
+        Title = {{RIPE Atlas}},
+        Year = 2019}
+        
+@misc{visibility-prefix,
+        Author = {{Stephen D. Strowes}},
+        Note = {\url{https://labs.ripe.net/Members/stephen_strowes/visibility-of-prefix-lengths-in-ipv4-and-ipv6}},
+        Title = {{Visibility of IPv4 and IPv6 Prefix Lengths in 2019}},
+        Year = 2019
+        }        
+
+@inproceedings{zhang2019understanding,
+  title={{Understanding Lifecycle Management Complexity of Datacenter Topologies}},
+  author={Zhang, Mingyang and Mysore, Radhika Niranjan and Supittayapornpong, Sucha and Govindan, Ramesh},
+  booktitle={16th $\{$USENIX$\}$ Symposium on Networked Systems Design and Implementation ($\{$NSDI$\}$ 19)},
+  year={2019}
+}
+
+@misc{dminerdata,
+  title={D-Miner Topology Snapshots},
+  howpublished={\url{https://gitlab.planet-lab.eu/cartography/}},
+}
+
+@inproceedings{vermeulen2020diamond,
+  title={Diamond-Miner: Comprehensive Discovery of the Internet's Topology Diamonds},
+  author={Vermeulen, Kevin and Rohrer, Justin P and Beverly, Robert and Fourmaux, Olivier and Friedman, Timur},
+  booktitle={17th $\{$USENIX$\}$ Symposium on Networked Systems Design and Implementation ($\{$NSDI$\}$ 20)},
+  pages={479--493},
+  year={2020}
+}
+
+@inproceedings{fan2010selecting,
+  title={Selecting representative IP addresses for Internet topology studies},
+  author={Fan, Xun and Heidemann, John},
+  booktitle={Proceedings of the 10th ACM SIGCOMM conference on Internet measurement},
+  pages={411--423},
+  year={2010}
+}
+
+@inproceedings{goodchild2017record,
+  title={The record route option is an option!},
+  author={Goodchild, Brian J and Chiu, Yi-Ching and Hansen, Rob and Lua, Haonan and Calder, Matt and Luckie, Matthew and Lloyd, Wyatt and Choffnes, David and Katz-Bassett, Ethan},
+  booktitle={Proceedings of the 2017 Internet Measurement Conference},
+  pages={311--317},
+  year={2017}
+}
+
+@article{keys2012internet,
+  title={Internet-scale IPv4 alias resolution with MIDAR},
+  author={Keys, Ken and Hyun, Young and Luckie, Matthew and Claffy, Kim},
+  journal={IEEE/ACM Transactions on Networking},
+  volume={21},
+  number={2},
+  pages={383--399},
+  year={2012},
+  publisher={IEEE}
+}
+
+@article{gunes2009resolving,
+  title={Resolving IP aliases in building traceroute-based Internet maps},
+  author={Gunes, Mehmet H and Sarac, Kamil},
+  journal={IEEE/ACM Transactions on Networking},
+  volume={17},
+  number={6},
+  pages={1738--1751},
+  year={2009},
+  publisher={IEEE}
+}
+
+@inproceedings{flach2012quantifying,
+  title={Quantifying violations of destination-based forwarding on the Internet},
+  author={Flach, Tobias and Katz-Bassett, Ethan and Govindan, Ramesh},
+  booktitle={Proceedings of the 2012 Internet Measurement Conference},
+  pages={265--272},
+  year={2012}
+}
+
+@inproceedings{madhyastha2006iplane,
+  title={iPlane: An information plane for distributed services},
+  author={Madhyastha, Harsha V and Isdal, Tomas and Piatek, Michael and Dixon, Colin and Anderson, Thomas and Krishnamurthy, Arvind and Venkataramani, Arun},
+  booktitle={Proceedings of the 7th symposium on Operating systems design and implementation},
+  pages={367--380},
+  year={2006}
+}
+
+@inproceedings{giotsas2020reduce,
+  title={Reduce, Reuse, Recycle: Repurposing Existing Measurements to Identify Stale Traceroutes},
+  author={Giotsas, Vasileios and Koch, Thomas and Fazzion, Elverton and Cunha, {\'I}talo and Calder, Matt and Madhyastha, Harsha V and Katz-Bassett, Ethan},
+  booktitle={Proceedings of the ACM Internet Measurement Conference},
+  pages={247--265},
+  year={2020}
+}
+
+@inproceedings{cormode2010set,
+ author = {Cormode, Graham and Karloff, Howard and Wirth, Anthony},
+ title = {Set cover algorithms for very large datasets},
+ booktitle = {Proc. ACM CIKM '10},
+ pages = {479--488},
+ year = {2010},
+doi = {10.1145/1871437.1871501},
+ source = {Crossref},
+ publisher = {ACM Press},
+ isbn = {9781450300995}
+}
+
+@inproceedings{steenbergen2009practical,
+  title={A practical guide to (correctly) troubleshooting with traceroute},
+  author={Steenbergen, Richard A},
+  year={2009},
+  organization={NANOG}
+}
+
+@inproceedings{he2005routing,
+  title={On routing asymmetry in the Internet},
+  author={He, Yihua and Faloutsos, Michalis and Krishnamurthy, Srikanth and Huffaker, Bradley},
+  booktitle={GLOBECOM'05. IEEE Global Telecommunications Conference, 2005.},
+  volume={2},
+  pages={6--pp},
+  year={2005},
+  organization={IEEE}
+}
+
+@inproceedings{de2015asymmetric,
+  title={How asymmetric is the Internet?},
+  author={de Vries, Wouter and Santanna, Jos{\'e} Jair and Sperotto, Anna and Pras, Aiko},
+  booktitle={IFIP International Conference on Autonomous Infrastructure, Management and Security},
+  pages={113--125},
+  year={2015},
+  organization={Springer}
+}
+
+@article{cunha2013dtrack,
+  title={DTRACK: a system to predict and track internet path changes},
+  author={Cunha, {\'I}talo and Teixeira, Renata and Veitch, Darryl and Diot, Christophe},
+  journal={IEEE/ACM Transactions on Networking},
+  volume={22},
+  number={4},
+  pages={1025--1038},
+  year={2013},
+  publisher={IEEE}
+}
+
+@inproceedings{krishnan2009moving,
+  title={Moving beyond end-to-end path information to optimize CDN performance},
+  author={Krishnan, Rupa and Madhyastha, Harsha V and Srinivasan, Sridhar and Jain, Sushant and Krishnamurthy, Arvind and Anderson, Thomas and Gao, Jie},
+  booktitle={Proceedings of the 9th ACM SIGCOMM conference on Internet measurement},
+  pages={190--201},
+  year={2009}
+}
+
+@article{luttringer2019let,
+  title={Let there be light: Revealing hidden MPLS tunnels with TNT},
+  author={Luttringer, Jean-Romain and Vanaubel, Yves and M{\'e}rindol, Pascal and Pansiot, Jean-Jacques and Donnet, Benoit},
+  journal={IEEE Transactions on Network and Service Management},
+  volume={17},
+  number={2},
+  pages={1239--1253},
+  year={2019},
+  publisher={IEEE}
+}
+
+@inproceedings{marder2020apple,
+  title={APPLE: Alias Pruning by Path Length Estimation},
+  author={Marder, Alexander},
+  booktitle={International Conference on Passive and Active Network Measurement},
+  pages={249--263},
+  year={2020},
+  organization={Springer}
+}
+
+@article{cunha14dtrack,
+author={Cunha, \'{I}. and Teixeira, R. and Veitch, D. and Diot, C.},
+journal={ACM/IEEE Transaction on Networking},
+title={{DTRACK: A System to Predict and Track Internet Path Changes}},
+year={2014},
+volume={22},
+number={4},
+pages={1025--1038}
+}
+pages={1-1},
+keywords={Path changes;topology mapping;tracking},
+doi={10.1109/TNET.2013.2269837},
+ISSN={1063-6692},}
+
+@inproceedings{cunha16sibyl,
+	author = {\'{I}. Cunha and P. Marchetta and M. Calder and
+			Y-C. Chiu and B. Schlinker and
+			B. V. A. Machado and A. Pescap\'{e} and
+			V. Giotsas and H. V. Madhyastha and
+			E. Katz-Bassett},
+	title = {{Sibyl: A Practical Internet Route Oracle}},
+	booktitle = {Proc. USENIX NSDI},
+	year = {2016}
+}
+	address = {Santa Clara, CA},
+	month = {March},
+
+@inproceedings{mad09inano,
+	author = {H. Madhyastha and E. Katz-Bassett and T. Anderson
+		and A. Krishnamurthy and A. Venkataramani},
+	title = {{iPlane Nano: Path Prediction for Peer-to-peer Applications}},
+	booktitle = NSDI,
+	year = {2009}
+}
+%	pages = {137--152},
+
+@inproceedings{singh21predictroute,
+	author = {Rachee Singh and David Tench and Phillipa Gill and Andrew McGregor},
+	title = {{PredictRoute: A Network Path Prediction Toolkit}},
+	booktitle=SIGMETRICS,
+	year=2021
+}
+
+@inproceedings{chiu15onehop,
+  author       = {Chiu, Yi-Ching and Schlinker, Brandon and Radhakrishnan, Abhishek Balaji and Katz-Bassett, Ethan and Govindan, Ramesh},
+  title        = {{Are We One Hop Away from a Better Internet?}},
+  booktitle    = IMC,
+  year         = {2015},
+}
+  pages        = {523--529},
+  organization = {ACM},
+  
+  @inproceedings{huang2020flashroute,
+  title={FlashRoute: Efficient Traceroute on a Massive Scale},
+  author={Huang, Yuchen and Rabinovich, Michael and Al-Dalky, Rami},
+  booktitle={Proceedings of the ACM Internet Measurement Conference},
+  pages={443--455},
+  year={2020}
+}
+
+@inproceedings{vermeulen2020alias,
+  title={Alias Resolution Based on ICMP Rate Limiting},
+  author={Vermeulen, Kevin and Ljuma, Burim and Addanki, Vamsi and Gouel, Matthieu and Fourmaux, Olivier and Friedman, Timur and Rejaie, Reza},
+  booktitle={International Conference on Passive and Active Network Measurement},
+  pages={231--248},
+  year={2020},
+  organization={Springer}
+}
+
+@techreport{fonseca2005ip,
+  title={IP options are not an option},
+  author={Fonseca, Rodrigo and Porter, George and Katz, R and Shenker, Scott and Stoica, Ion},
+  year={2005},
+  institution={Technical report, EECS Department, University of California, Berkeley}
+}
+
+@inproceedings{sherwood2006touring,
+  title={Touring the Internet in a TCP sidecar},
+  author={Sherwood, Rob and Spring, Neil},
+  booktitle={Proceedings of the 6th ACM SIGCOMM conference on Internet measurement},
+  pages={339--344},
+  year={2006}
+}
+
+@inproceedings{katz2008studying,
+  title={Studying Black Holes in the Internet with Hubble.},
+  author={Katz-Bassett, Ethan and Madhyastha, Harsha V and John, John P and Krishnamurthy, Arvind and Wetherall, David and Anderson, Thomas E},
+  booktitle={NSDI},
+  volume={8},
+  pages={247--262},
+  year={2008}
+}
+
+@article{pansiot1998routes,
+  title={On routes and multicast trees in the Internet},
+  author={Pansiot, Jean-Jacques and Grad, Dominique},
+  journal={ACM SIGCOMM Computer Communication Review},
+  volume={28},
+  number={1},
+  pages={41--50},
+  year={1998},
+  publisher={ACM New York, NY, USA}
+}
+
+@techreport{burch2005measuring,
+  title={Measuring an IP network in situ},
+  author={Burch, Hal},
+  year={2005},
+  institution={PhD thesis, CMU}
+}
+
+@inproceedings{zhang2004planetseer,
+  title={Planetseer: Internet path failure monitoring and characterization in wide-area services.},
+  author={Zhang, Ming and Zhang, Chi and Pai, Vivek S and Peterson, Larry L and Wang, Randolph Y},
+  booktitle={OSDI},
+  volume={4},
+  pages={12--12},
+  year={2004}
+}
+@inproceedings{mahajan2008uncovering,
+  title={Uncovering Performance Differences Among Backbone ISPs with Netdiff.},
+  author={Mahajan, Ratul and Zhang, Ming and Poole, Lindsey and Pai, Vivek S},
+  booktitle={NSDI},
+  pages={205--218},
+  year={2008}
+}
+
+@article{mahajan2003user,
+  title={User-level Internet path diagnosis},
+  author={Mahajan, Ratul and Spring, Neil and Wetherall, David and Anderson, Thomas},
+  journal={ACM SIGOPS Operating Systems Review},
+  volume={37},
+  number={5},
+  pages={106--119},
+  year={2003},
+  publisher={ACM New York, NY, USA}
+}
+
+@article{gueye2006constraint,
+  title={Constraint-based geolocation of internet hosts},
+  author={Gueye, Bamba and Ziviani, Artur and Crovella, Mark and Fdida, Serge},
+  journal={IEEE/ACM Transactions On Networking},
+  volume={14},
+  number={6},
+  pages={1219--1232},
+  year={2006},
+  publisher={IEEE}
+}
+
+@inproceedings{wong2007octant,
+  title={Octant: A Comprehensive Framework for the Geolocalization of Internet Hosts.},
+  author={Wong, Bernard and Stoyanov, Ivan and Sirer, Emin G{\"u}n},
+  booktitle={NSDI},
+  volume={7},
+  pages={23--23},
+  year={2007}
+}
+
+@inproceedings{eriksson2008network,
+  title={Network discovery from passive measurements},
+  author={Eriksson, Brian and Barford, Paul and Nowak, Robert},
+  booktitle={Proceedings of the ACM SIGCOMM 2008 conference on Data communication},
+  pages={291--302},
+  year={2008}
+}
+
+@inproceedings{chen2004algebraic,
+  title={An algebraic approach to practical and scalable overlay network monitoring},
+  author={Chen, Yan and Bindel, David and Song, Hanhee and Katz, Randy H},
+  booktitle={Proceedings of the 2004 conference on Applications, technologies, architectures, and protocols for computer communications},
+  pages={55--66},
+  year={2004}
+}
+
+@inproceedings{trufflehunter,
+  title={{Trufflehunter: Cache Snooping Rare Domains at Large Public DNS Resolvers}},
+  author={Randall, Audrey and Liu, Enze and Akiwate, Gautam and Padmanabhan, Ramakrishna and Voelker, Geoffrey M and Savage, Stefan and Schulman, Aaron},
+  booktitle={Proceedings of the ACM Internet Measurement Conference},
+  pages={50--64},
+  year={2020}
+}
+
+@inproceedings{mapping-google,
+  title={Mapping the expansion of google's serving infrastructure},
+  author={Calder, Matt and Fan, Xun and Hu, Zi and Katz-Bassett, Ethan and Heidemann, John and Govindan, Ramesh},
+  booktitle={Proceedings of the 2013 conference on Internet measurement conference},
+  year={2013}
+}
+
+@inproceedings{maryland-anycast,
+  title={Internet anycast: performance, problems, \& potential},
+  author={Li, Zhihao and Levin, Dave and Spring, Neil and Bhattacharjee, Bobby},
+  booktitle={Proceedings of the 2018 Conference of the ACM Special Interest Group on Data Communication},
+  year={2018}
+}
+
+@inproceedings{calder-edns-adoption,
+  title={A Cloud Provider’s View of EDNS Client-Subnet Adoption},
+  author={Calder, Matt and Fan, Xun and Zhu, Liang},
+  booktitle={2019 Network Traffic Measurement and Analysis Conference (TMA)},
+  year={2019},
+  organization={IEEE}
+}
+
+@inproceedings{cache-me-outside,
+  title={{Cache Me Outside: A New Look at DNS Cache Probing}},
+  author={Niaki, Arian Akhavan and Marczak, William and Farhoodi, Sahand and McGregor, Andrew and Gill, Phillipa and Weaver, Nicholas},
+  booktitle={PAM},
+  year={2021}
+}
+
+@article{end-user-mapping,
+  title={End-user mapping: Next generation request routing for content delivery},
+  author={Chen, Fangfei and Sitaraman, Ramesh K and Torres, Marcelo},
+  journal={ACM SIGCOMM Computer Communication Review},
+  year={2015}
+}
+
+@inproceedings{one-hop-away,
+  title={Are we one hop away from a better internet?},
+  author={Chiu, Yi-Ching and Schlinker, Brandon and Radhakrishnan, Abhishek Balaji and Katz-Bassett, Ethan and Govindan, Ramesh},
+  booktitle={Proceedings of the 2015 Internet Measurement Conference},
+  year={2015}
+}
+
+% APNIC population by AS
+@misc{apnic-population,
+  title={How Big is that Network},
+  author={Geoff Huston},
+  year={2014},
+  publisher={APNIC},
+  url={labs.apnic.net/?p=526}
+}
+@inproceedings{todd-cloud-connectivity,
+  title={Cloud provider connectivity in the flat internet},
+  author={Arnold, Todd and He, Jia and Jiang, Weifan and Calder, Matt and Cunha, Italo and Giotsas, Vasileios and Katz-Bassett, Ethan},
+  booktitle={Proceedings of the ACM Internet Measurement Conference},
+  pages={230--246},
+  year={2020}
+}
+@inproceedings{todd-wan-performance,
+  title={(How Much) Does a Private WAN Improve Cloud Performance?},
+  author={Arnold, Todd and G{\"u}rmeri{\c{c}}liler, Ege and Essig, Georgia and Gupta, Arpit and Calder, Matt and Giotsas, Vasileios and Katz-Bassett, Ethan},
+  booktitle={IEEE INFOCOM 2020-IEEE Conference on Computer Communications},
+  pages={79--88},
+  year={2020},
+  organization={IEEE}
+}
+@inproceedings{imc2017-shortcuts,
+  title={Shortcuts through colocation facilities},
+  author={Kotronis, Vasileios and Nomikos, George and Manassakis, Lefteris and Mavrommatis, Dimitris and Dimitropoulos, Xenofontas},
+  booktitle={Proceedings of the 2017 Internet Measurement Conference},
+  pages={470--476},
+  year={2017}
+}
+@inproceedings{isi-census,
+  author = {Heidemann, John and Pradkin, Yuri and Govindan, Ramesh and Papadopoulos, Christos and Bartlett, Genevieve and Bannister, Joseph},
+  title = {Census and Survey of the Visible Internet},
+  booktitle = {Proceedings of the ACM Internet Measurement Conference},
+  year = {2008},
+  sortdate = {2008-10-01},
+  project = {ant, lander, madcat, lacrend},
+  jsubject = {topology_modeling},
+  publisher = {ACM},
+  address = {Vouliagmeni, Greece},
+  month = oct,
+  pages = {169--182},
+  location = {johnh: pafile},
+  keywords = {census, survey, internet address space},
+  url = {http://www.isi.edu/%7ejohnh/PAPERS/Heidemann08c.html},
+  pdfurl = {http://www.isi.edu/%7ejohnh/PAPERS/Heidemann08c.pdf},
+  myorganization = {USC/Information Sciences Institute},
+  copyrightholder = {authors}
+}
+@inproceedings{anrw2017-user-connectivity,
+  title={Characterizing user-to-user connectivity with ripe atlas},
+  author={Gigis, Petros and Kotronis, Vasileios and Aben, Emile and Strowes, Stephen D and Dimitropoulos, Xenofontas},
+  booktitle={Proceedings of the Applied Networking Research Workshop},
+  pages={4--6},
+  year={2017}
+}
+@article{ono,
+  title={Taming the torrent: a practical approach to reducing cross-isp traffic in peer-to-peer systems},
+  author={Choffnes, David R and Bustamante, Fabi{\'a}n E},
+  journal={ACM SIGCOMM Computer Communication Review},
+  volume={38},
+  number={4},
+  pages={363--374},
+  year={2008},
+  publisher={ACM New York, NY, USA}
+}
+@inproceedings{router-geolocation-imc2017,
+  title={A look at router geolocation in public and commercial databases},
+  author={Gharaibeh, Manaf and Shah, Anant and Huffaker, Bradley and Zhang, Han and Ensafi, Roya and Papadopoulos, Christos},
+  booktitle={Proceedings of the 2017 Internet Measurement Conference},
+  pages={463--469},
+  year={2017}
+}
+@inproceedings{imc2016-tls-proxies,
+  title={TLS proxies: Friend or foe?},
+  author={O'Neill, Mark and Ruoti, Scott and Seamons, Kent and Zappala, Daniel},
+  booktitle={Proceedings of the 2016 Internet Measurement Conference},
+  pages={551--557},
+  year={2016}
+}
+@inproceedings{botnet-imc2006,
+  title={A multifaceted approach to understanding the botnet phenomenon},
+  author={Abu Rajab, Moheeb and Zarfoss, Jay and Monrose, Fabian and Terzis, Andreas},
+  booktitle={Proceedings of the 6th ACM SIGCOMM conference on Internet measurement},
+  pages={41--52},
+  year={2006}
+}
+@inproceedings{satellite-atc2016,
+  title={Satellite: Joint analysis of CDNs and network-level interference},
+  author={Scott, Will and Anderson, Thomas and Kohno, Tadayoshi and Krishnamurthy, Arvind},
+  booktitle={2016 $\{$USENIX$\}$ Annual Technical Conference ($\{$USENIX$\}$$\{$ATC$\}$ 16)},
+  pages={195--208},
+  year={2016}
+}
+@misc{ecs,
+  title={Client Subnet in DNS Queries},
+  author={Contavalli and van der Gaaast, Lawrence, Kumari},
+  url={datatracker.ietf.org/doc/html/rfc7871},
+  year={2016}
+}
+@inproceedings{imc2013-exploring-edns,
+  title={Exploring EDNS-client-subnet adopters in your free time},
+  author={Streibelt, Florian and B{\"o}ttger, Jan and Chatzis, Nikolaos and Smaragdakis, Georgios and Feldmann, Anja},
+  booktitle={Proceedings of the 2013 conference on Internet measurement conference},
+  pages={305--312},
+  year={2013}
+}
+@phdthesis{li2019diagnosing,
+  title={Diagnosing and Improving the Performance of Internet Anycast},
+  author={Li, Zhihao},
+  year={2019}
+}
+@misc{apnic-chromium-dns-root,
+  title={Chromium's impact on root DNS traffic},
+  url={blog.apnic.net/2020/08/21/chromiums-impact-on-root-dns-traffic},
+  author={Thomas, Matthew},
+  year={2020},
+  publisher={APNIC}
+}
+@misc{apnic-chromium-reduced-dns-root,
+  title={How Chroium reduced Root DNS traffic},
+  url={blog.apnic.net/2021/02/04/how-chromium-reduces-root-dns-traffic/},
+  author={Wessels, Duane},
+  year={2021},
+  publisher={APNIC}
+}
+@misc{ditl,
+  url={dns-oarc.net/oarc/data/ditl},
+  title={DNS-OARC},
+  year={2020}
+}
+@inproceedings{imc2016-beyond-counting,
+  title={Beyond counting: new perspectives on the active IPv4 address space},
+  author={Richter, Philipp and Smaragdakis, Georgios and Plonka, David and Berger, Arthur},
+  booktitle={Proceedings of the 2016 Internet Measurement Conference},
+  pages={135--149},
+  year={2016}
+}
+
+@inproceedings{wills2003inferring,
+  title={Inferring relative popularity of internet applications by actively querying dns caches},
+  author={Wills, Craig E and Mikhailov, Mikhail and Shang, Hao},
+  booktitle={Proceedings of the 3rd ACM SIGCOMM conference on Internet measurement},
+  pages={78--90},
+  year={2003}
+}
+
+@inproceedings{rajab2008peeking,
+  title={Peeking through the cloud: DNS-based estimation and its applications},
+  author={Rajab, Moheeb Abu and Monrose, Fabian and Terzis, Andreas and Provos, Niels},
+  booktitle={International Conference on Applied Cryptography and Network Security},
+  year={2008},
+  organization={Springer}
+}
