@@ -1925,7 +1925,7 @@ Computing Machinery]
   \def\@affiliationfont{\large}
 \or % sigconf
   \def\@authorfont{\LARGE}
-  \def\@affiliationfont{\large}
+  \def\@affiliationfont{\normalsize}
 \or % siggraph
   \def\@authorfont{\normalsize\normalfont}
   \def\@affiliationfont{\normalsize\normalfont}

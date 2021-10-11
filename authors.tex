@@ -1,0 +1,38 @@
+\makeatletter
+\def\@typeset@author@bx{%
+	\global\setbox\author@bx=\vtop{\noindent\centering
+		\@authorfont
+			Thomas Koch$^{\star}$
+			Weifan Jiang$^{\star}$
+			Tao Luo$^\star$
+			Ethan Katz-Bassett$^\star$
+			Matt Calder$^\star\dagger$
+			\break
+			Kevin Vermeulen$^\star$
+			Emile Aben$^\ddagger$
+			Petros Gigis$^\sharp$
+			Georgios Smaragdakis$^1$ 
+			\break
+			Narseo Vallina-Rodriguez$^2$
+			Lefteris Manassakis$^3$
+		\medskip
+		\par\noindent
+		\@affiliationfont
+			$^\star$ Columbia University\;
+			$^\dagger$ Microsoft\;
+			$^\ddagger$ RIPE NCC\;
+			$^\sharp$ U.C. London\;
+			$^1$ TU Delft\;
+			$^2$ IMDEA Networks / ICSI\;
+			$^3$ FORTH-ICS
+	}
+	\box\author@bx
+}
+\makeatother
+
+\makeatletter
+\def\@mkauthors@iii{\hsize=\textwidth
+	\global\setbox\mktitle@bx=\vbox{\noindent
+	\box\mktitle@bx\par\medskip%\leavevmode
+	\@typeset@author@bx\par\bigskip\bigskip\leavevmode}}
+\makeatother
