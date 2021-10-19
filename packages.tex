@@ -1,41 +1,35 @@
+\usepackage[medium,compact]{titlesec}
+\usepackage{amsmath,amssymb,palatino,graphicx,amsfonts,amsthm}
+\usepackage{courier,color,wrapfig}
+\usepackage{booktabs}
+\usepackage{balance}
+\urlstyle{rm}
+\usepackage{enumitem}
+\setlist[itemize]{topsep=-0.5ex,itemsep=-0.8ex, leftmargin=0.4cm}
+\setlist[enumerate]{topsep=-0.5ex,itemsep=-0.8ex, leftmargin=0.4cm}
+\setlist[description]{topsep=-0.2ex,itemsep=-0.8ex, leftmargin=0.4cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%% PAGINATION
+% \linepenalty=10000
+% \frenchspacing
+\setlength{\textwidth}{6.5in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\textheight}{9.0in}
+\setlength{\topmargin}{0in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\parindent}{15pt}
+\setlength{\parskip}{0.1\baselineskip}
 \usepackage{xspace} % auto-eats spaces as needed
 \usepackage{verbatim} % to support to-dos / comment environment
 \usepackage{url} % links to bib items
+\usepackage{amsmath, amssymb} % math formulas, etc.
 \usepackage{graphicx} % PDF, EPS, and many other graphics formats
 \usepackage{multirow} % easier tables
+%\usepackage{subfigure} Use subcaption instead, subfigure deprecated: https://ctan.org/pkg/subfigure
+\usepackage{subcaption}
 \usepackage[nolist]{acronym}
 \usepackage{cleveref}
 \usepackage{wasysym}
-
-
-%\usepackage{changes}
-%\usepackage{ulem}
-%% \usepackage[normalem]{ulem} % either use this (simple) or
-%\usepackage{xcolor}
-\usepackage{colortbl}
-%\usepackage{xspace}
-%
-%\usepackage{tikz}
-\usepackage{tabularx} % in the preamble
-%\usepackage{graphicx}
-%\usepackage{booktabs} % For formal tables
-%\usepackage{url}
-%\usepackage{algorithm}
-\usepackage{amsmath}
-\usepackage[ruled,noend]{algorithm2e}
-
-%%\usepackage{algorithmic}
-%\usepackage{stmaryrd}
-%\usepackage{amsmath}
-%\usepackage{amsthm}
-%\usepackage{amssymb}
-%
-%\usepackage[noend]{algpseudocode}
-%\usepackage{diagbox}
-\usepackage{subcaption}
-\usepackage{makecell}
-
-
 \crefformat{section}{#2\S#1#3}
 \Crefformat{section}{#2Section~#1#3}
 \crefname{section}{\S}{\S\S}
@@ -46,7 +40,10 @@
 \Crefname{table}{Table}{Tables}
 \crefname{figure}{Figure}{Figures}
 \Crefname{figure}{Figure}{Figures}
-\crefname{algorithm}{Algorithm}{Algorithms}
+
+%\usepackage{draftwatermark}
+%\SetWatermarkText{DRAFT---Do not distribute}
+%\SetWatermarkScale{0.35}
 
 % subheaders
 \newtheorem{Theorem}{Theorem}
@@ -60,6 +57,18 @@
 % \setlength{\belowcaptionskip}{-8pt}
 % \renewcommand{\captionfont}{\small\em}
 
+% caption setup
+\usepackage{caption}
+\captionsetup[table]{position=bottom, skip=4pt}
+\captionsetup[figure]{position=bottom, skip=1pt}
+%\setlength{\textfloatsep}{0.7\baselineskip plus 0.2\baselineskip minus 0.5\baselineskip} 
+
+% \usepackage{caption}
+\setlength{\abovecaptionskip}{1pt}
+\setlength{\belowcaptionskip}{-6pt}
+% \captionsetup[table]{position=bottom, skip=4pt} 
+\renewcommand{\captionfont}{\small}
+
 % float parameters
 % needed to create an algorithm float
 % \usepackage{float}
@@ -71,4 +80,7 @@
 % \setcounter{totalnumber}{99}
 % \setcounter{topnumber}{99}
 % \setcounter{dbltopnumber}{99}
-\setcopyright{none} 
+
+% Better breaking of URLs
+\def\UrlBreaks{\do\/\do-\do.}
+\def\UrlNoBreaks{\do:}
