@@ -17,7 +17,7 @@ PANDOC_FLAGS=-s -N --template=template.tex -f markdown+yaml_metadata_block+footn
 # Customize the line below to change the bib file and the csl file (either ieee or acm)
 # and to use pandoc-citeproc or biblatex (the latter is the default)
 # BIBLIO_FLAGS=--bibliography=mybib.bib --csl=acm.csl
-BIBLIO_FLAGS=--bibliography=bibliography.bib --natbib
+BIBLIO_FLAGS=--bibliography=bibliography.bib --biblatex
 
 .SUFFIXES:
 .SUFFIXES: .stamp .tex .pdf
