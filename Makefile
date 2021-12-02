@@ -57,7 +57,8 @@ $(NAME).tex: $(NAME).trig
 	#      the footnotes in Google Docs text export
 	sed -i -r $(SED_REGEXP_FLAGS) 's/\[([0-9]+)\]/\[^\1\]/g; s/^(\[\^[0-9]+\])/\1:/g; s/^_{16}//' $(NAME).md
 	rm $(NAME).mdt
-	pandoc $(PANDOC_FLAGS) $(BIBLIO_FLAGS) $(NAME).md > $(NAME).tex
+	pandoc $(PANDOC_FLAGS) $(BIBLIO_FLAGS) $(NAME).md | \
+	  sed 's/\\textbackslash iffalse/\\iffalse/g' > $(NAME).tex
 
 # Iterate on latex until cross references don't change
 $(NAME).pdf: $(NAME).tex
