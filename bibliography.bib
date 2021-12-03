@@ -18,6 +18,15 @@
 %%%  }
 %%% ====================================================================
 
+%
+% these definitions are from johnh's bib:
+%
+@string{acm-imc = " ACM Internet Measurement Conference"};
+@string{proc = "Proceedings of the "};
+@string{pub-acm = "{ACM}"};
+@string{pub-ieee = "{IEEE}"};
+@string{ieee-tmac = " IEEE Network Traffic Monitoring and Analysis Conference"}; % 2018
+
 % Journals
 
 % First the Full Name is given, then the abbreviation used in the AMS Math
@@ -1303,6 +1312,7 @@ ISSN={1063-6692},}
   booktitle={ACM IMC},
   year={2017}
 }
+% next is also Heidemann08c
 @inproceedings{isi-census,
   author = {Heidemann, John and Pradkin, Yuri and Govindan, Ramesh and Papadopoulos, Christos and Bartlett, Genevieve and Bannister, Joseph},
   title = {Census and Survey of the Visible Internet},
@@ -1930,3 +1940,181 @@ year={2021}
   pages={829--838},
   year={2010}
 }
+
+@InProceedings{Quan14c,
+	author = 	"Lin Quan and John Heidemann and Yuri Pradkin",
+	title = 	"When the {Internet} Sleeps: Correlating
+                  Diurnal Networks With External Factors" ,
+	booktitle = 	proc # acm-imc,
+	year = 		2014,
+	sortdate = 		"2014-11-01", 
+	project = "ant, lacrend, retrofuture",
+	jsubject = "routing",
+	pages = 	"87--100",
+	month = 	nov,
+	address = 	"Vancouver, BC, Canada",
+	publisher = 	pub-acm,
+	location = 	"johnh: pafile",
+	keywords = 	"routing outage detection, diurnal ntework
+                  behavior, active probing,
+                  ntework outages",
+	doi = "http://dx.doi.org/10.1145/2663716.2663721",
+	url =		"https://www.isi.edu/%7ejohnh/PAPERS/Quan14b.html",
+	pdfurl =	"https://www.isi.edu/%7ejohnh/PAPERS/Quan14b.pdf",
+	otherurl =	"ftp://ftp.isi.edu/isi-pubs/tr-699b.pdf",
+	blogurl = "https://ant.isi.edu/blog/?p=540",
+	myorganization =	usc-isi,
+	copyrightholder = "authors",
+	copyrightterms = license-acm-2014,
+	abstract = "
+As the Internet matures, policy questions loom larger in its
+operation.  When should an ISP, city, or government invest in
+infrastructure?  How do their policies affect use?  In this work, we
+develop a new approach to evaluate how policies, economic conditions
+and technology correlates with Internet use around the world.  First,
+we develop an adaptive and accurate approach to
+estimate \emph{block availability}, 
+the fraction of active IP addresses in each /24 block
+over short timescales (every 11 minutes).  Our estimator provides a
+new lens to interpret data taken from existing long-term outage
+measurements, thus requiring no additional traffic.  (If new
+collection was required, it would be lightweight, since on average,
+outage detection requires less than 20 probes per hour per /24 block;
+less than 1\% of background radiation.)  Second, we show that spectral
+analysis of this measure can identify \emph{diurnal usage}: blocks
+where addresses are regularly used during part of the day and idle in
+other times.  Finally, we analyze data for the entire responsive
+Internet (3.7M /24 blocks) over 35 days.  These global observations
+show \emph{when} and \emph{where} the Internet sleeps---networks are
+mostly always-on in the US and Western Europe, and diurnal in much of
+Asia, South America, and Eastern Europe.  ANOVA (Analysis of Variance)
+testing shows that diurnal networks correlate negatively with country
+GDP and electrical consumption, quantifying that national policies and
+economics relate to networks.
+",
+}
+
+
+@TechReport{Song21a,
+        author =        "Xiao Song and John Heidemann",
+        title =         "Measuring the Internet during Covid-19 to Evaluate Work-from-Home",
+        institution =   "USC/ISI",
+        year =          2021,
+	sortdate = 	"2021-02-17", 
+	project = "ant, minceq, eieio",
+	jsubject = "topology_modeling",
+        location =   "johnh: pafile",
+	url =		"https://www.isi.edu/%7ejohnh/PAPERS/Song21a.html",
+	pdfurl =	"https://www.isi.edu/%7ejohnh/PAPERS/Song21a.pdf",
+	otherurl = "https://arxiv.org/abs/2102.07433",
+        number =     "arXiv:2102.07433v2 [cs.NI]",
+        month =      feb,
+        keywords =   "internet, address scans, covid-19, poster, trinocular",
+	abstract = "The Covid-19 pandemic has radically changed our lives. Under different circumstances, people react to it in various ways. One way is to work-from-home since lockdown has been announced in many regions around the world. For some places, however, we don't know if people really work from home due to the lack of information. Since there are lots of uncertainties, it would be helpful for us to understand what really happen in these places if we can detect the reaction to the Covid-19 pandemic. Working from home indicates that people have changed the way they interact with the Internet. People used to access the Internet in the company or at school during the day. Now it is more likely that they access the Internet at home in the daytime. Therefore, the network usage changes in one place can be used to indicate if people in this place actually work from home. In this work, we reuse and analyze Trinocular outages data (around 5.1M responsive /24 blocks) over 6 months to find network usage changes by a new designed algorithm. We apply the algorithm to sets of /24 blocks in several cities and compare the detected network usage changes with real world covid-19 events to verify if the algorithm can capture the changes reacting to the Covid-19 pandemic. By applying the algorithm to all measurable /24 blocks to detect network usages changes, we conclude that network usage can be an indicator of the reaction to the Covid-19 pandemic."
+,}
+
+@InProceedings{Bartlett07d,
+	  author = 	"Genevieve Bartlett and John Heidemann and Christos Papadopoulos",
+	  title = 	"Understanding Passive and Active Service Discovery",
+	  booktitle = 	proc # acm-imc,
+	  year = 		2007,
+	sortdate = 		"2007-10-01", 
+	  publisher =	pub-acm,
+	  address =	"San Diego, California, USA",
+	  month =		oct,
+	  pages =		"57--70",
+	  location =	"johnh: pafile",
+	  keywords =	"passive service discovery, active service discovery",
+	project = "ant, lander, predict",
+	jsubject = "traffic_detection",
+	doi = "http://dx.doi.org/10.1145/1298306.1298314",
+	  url =		"https://www.isi.edu/%7ejohnh/PAPERS/Bartlett07d.html",
+	  pdfurl =		"https://www.isi.edu/%7ejohnh/PAPERS/Bartlett07d.pdf",
+	  myorganization =	usc-isi,
+	  copyrightholder = pub-acm,
+	  copyrightterms = copyright-acm-2003,
+	  abstract = "
+  Increasingly, network operators do not directly operate computers on
+  their network, yet are responsible for assessing network
+  vulnerabilities to ensure compliance with laws and policies about
+  information disclosure, and tracking services that affect
+  provisioning.  Thus, with decentralized network management,
+  \emph{service discovery} becomes an important part of maintaining and
+  protecting computer networks.  We explore two approaches to service
+  discovery:  \emph{active probing} and \emph{passive monitoring}.
+  Active probing finds all services currently on the network, except
+  services temporarily unavailable or hidden by firewalls; however, it
+  is often too invasive, especially if used across administrative
+  boundaries.  Passive monitoring is typically much slower and can find
+  transient services, but misses services that are idle.  We compare the
+  accuracy of passive and active approaches to service discovery and
+  show that they are complimentary, highlighting the need for multiple
+  active scans coupled with long-duration passive monitoring.  We find
+  passive monitoring is well suited for quickly finding popular
+  services, finding servers responsible for 99\% of incoming connections
+  within minutes.  Active scanning is better suited to rapidly finding
+  \emph{all} servers, which is important for vulnerability
+  detection--one scan finds 98\% of services in two hours, missing only
+  a handful.  External scans are an unexpected ally to passive
+  monitoring, speeding service discovery by the equivalent of 9--15 days
+  of additional observation.  Finally, we show how the use of static or
+  dynamic addresses changes the effectiveness of service discovery, both
+  due to address reuse and VPN effects.
+  ",
+}
+
+@InProceedings{Mirkovic17a,
+	author = 	"Jelena Mirkovic and Genevieve Bartlett and
+ John Heidemann and Hao Shi and Xiyue Deng",
+	title = "Do You See Me Now? Sparsity in Passive
+                  Observations of Address Liveness",
+        booktitle =     ieee-tmac,
+        year =          2017,
+        pages =      "1--9",
+        month =      jul,
+        address =    "Dublin, Ireland",
+        publisher =  pub-ieee,
+	location = 	"johnh: pafile",
+	keywords = 	"passive observation, internet census",
+	url =		"https://www.isi.edu/%7ejohnh/PAPERS/Mirkovic17a.html",
+	pdfurl =	"https://www.isi.edu/%7ejohnh/PAPERS/Mirkovic17a.pdf",
+	blogurl = "https://ant.isi.edu/blog/?p=1001",
+	myorganization =	usc-isi,
+	sortdate = 	"2017-07-21", 
+	project = "ant, lacrend, lander, retrofuture",
+	jsubject = "topology_modeling",
+        doi =        "https://doi.org/10.23919/TMA.2017.8002908",
+	copyrightholder = pub-ieee,
+	abstract = "Accurate information about address and block usage in the Internet has
+many applications in planning address allocation, topology studies,
+and simulations.  Prior studies used active probing, sometimes
+augmented with passive observation, to study \emph{macroscopic}
+phenomena, such as the overall usage of the IPv4 address space.  This
+paper instead studies the completeness of \emph{passive} sources:  how
+well they can observe \emph{microscopic} phenomena such as address
+usage within a given network.  We define \textit{sparsity} as the
+limitation of a given monitor to see a target, and we quantify the
+effects of interest, temporal, and coverage sparsity.  To study
+sparsity, we introduce \emph{inverted analysis}, a novel approach that
+uses complete passive observations of a few end networks (three campus
+networks in our case) to infer what of these networks would be seen by
+millions of \emph{virtual} monitors near their traffic's destinations.
+Unsurprisingly, we find that monitors near popular content see many
+more targets and that visibility is strongly influenced by bipartite
+traffic between clients and servers.  We are the first to quantify
+these effects and show their implications for the study of Internet
+liveness from passive observations.  We find that visibility is
+heavy-tailed, with only 0.5\% monitors seeing more than 10\% of our
+targets' addresses, and is most affected by \emph{interest sparsity}
+over temporal and coverage sparsity.  Visibility is also strongly
+bipartite.  Monitors of a different class than a target (e.g., a
+server monitor observing a client target) outperform monitors of the
+same class as a target in 82-99\% of cases in our datasets.  Finally,
+we find that adding active probing to passive observations greatly
+improves visibility of both server and client target addresses, but is
+not critical for visibility of target blocks.  Our findings are
+valuable to understand limitations of existing measurement studies,
+and to develop methods to maximize microscopic completeness in future
+studies.",
+}
+
