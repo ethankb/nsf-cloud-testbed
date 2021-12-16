@@ -1,0 +1,14 @@
+*~
+\#*#
+.#\*
+*.log
+*.ps
+*.dvi
+*.bbl
+*.blg
+*.aux
+*.bak
+*.out
+*.fls
+*.fdb_latexmk
+RCS-
