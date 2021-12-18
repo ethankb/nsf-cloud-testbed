@@ -1,6 +1,3 @@
-@string{acm-sigcomm = " {ACM} SIGCOMM Conference "};   # as in the conference
-@string{pub-acm = "{ACM}"};
-@string{acm-ccr = "{ACM} Computer Communication Review"};
 %%% ====================================================================
 %%%  BibTeX-file{
 %%%     author          = "Gerry Murray",
@@ -29,6 +26,9 @@
 @string{pub-acm = "{ACM}"};
 @string{pub-ieee = "{IEEE}"};
 @string{ieee-tmac = " IEEE Network Traffic Monitoring and Analysis Conference"}; % 2018
+@string{pub-ieee = "{IEEE}"};
+@string{acm-sigcomm = " {ACM} SIGCOMM Conference "};   # as in the conference
+@string{acm-ccr = "{ACM} Computer Communication Review"};
 
 % Journals
 
@@ -2227,5 +2227,89 @@ Internet (more than 80\% in China, while less than 30\% in the U.S.).
 Third, we distinguish blocks with low-bitrate last-hops and show that
 such blocks are often underutilized.
 ",
+}
+
+@InProceedings{Stutz21a,
+        author =        "Erica Stutz and Yuri Pradkin and Xiao Song and John Heidemann",
+        title =         "Visualizing {Internet} Measurements of
+                  {Covid-19} Work-from-Home",
+        booktitle =     proc # "National Symposium for NSF REU Research in Data Science, Systems, and Security (REU 2021 Symposium)",
+        year =          2021,
+	sortdate = 	"2021-12-15", 
+	project = "ant, minceq, eieio",
+	jsubject = "topology_modeling",
+        pages =      "5633--5638",
+        month =      dec,
+        address =    "Virtual Workshop",
+        publisher =  pub-ieee,
+        location =   "johnh: pafile",
+        keywords =   "covid-19, work-from-home, visualization, trinocular",
+        doi =        "tbd",
+	url =		"https://www.isi.edu/%7ejohnh/PAPERS/Stutz21a.html",
+	pdfurl =	"https://www.isi.edu/%7ejohnh/PAPERS/Stutz21a.pdf",
+	blogurl = "https://ant.isi.edu/blog/?p=1810",
+	conferenceurl = "https://bigdataieee.org/BigData2021/SpecialSymposium.html",
+	abstract = "The Covid-19 pandemic disrupted the world as businesses and schools
+shifted to work-from-home (WFH), and comprehensive maps have helped
+visualize how those policies changed over time and in different
+places.  We recently developed algorithms that infer the onset of WFH
+based on changes in observed Internet usage. Measurements of WFH are
+important to evaluate how effectively policies are implemented and
+followed, or to confirm policies in countries with less transparent
+journalism.  This paper describes a web-based visualization system for
+measurements of Covid-19-induced WFH.  We build on a web-based world
+map, showing a geographic grid of observations about WFH\@.  We extend
+typical map interaction (zoom and pan, plus animation over time) with
+two new forms of pop-up information that allow users to drill-down to
+investigate our underlying data.  We use sparklines to show changes
+over the first 6 months of 2020 for a given location, supporting
+identification and navigation to hot spots.  Alternatively, users can
+report particular networks (Internet Service Providers) that show WFH
+on a given day.  We show that these tools help us relate our
+observations to news reports of Covid-19-induced changes and, in some
+cases, lockdowns due to other causes.  Our visualization is publicly
+available at \url{https://covid.ant.isi.edu}, as is our underlying
+data."
+,}
+
+
+@TechReport{Song21a,
+        author =        "Xiao Song and John Heidemann",
+        title =         "Measuring the Internet during Covid-19 to Evaluate Work-from-Home",
+        institution =   "USC/ISI",
+        year =          2021,
+	sortdate = 	"2021-02-17", 
+	project = "ant, minceq, eieio",
+	jsubject = "topology_modeling",
+        location =   "johnh: pafile",
+        keywords =   "internet, address scans, covid-19, poster, trinocular",
+	url =		"https://www.isi.edu/%7ejohnh/PAPERS/Song21a.html",
+	pdfurl =	"https://www.isi.edu/%7ejohnh/PAPERS/Song21a.pdf",
+	otherurl = "https://arxiv.org/abs/2102.07433",
+        number =     "arXiv:2102.07433v2 [cs.NI]",
+        month =      feb,
+        location =   "johnh: pafile",
+        keywords =   "internet, address scans, covid-19, poster, trinocular",
+	abstract = "The Covid-19 pandemic has radically changed our lives. Under different circumstances, people react to it in various ways. One way is to work-from-home since lockdown has been announced in many regions around the world. For some places, however, we don't know if people really work from home due to the lack of information. Since there are lots of uncertainties, it would be helpful for us to understand what really happen in these places if we can detect the reaction to the Covid-19 pandemic. Working from home indicates that people have changed the way they interact with the Internet. People used to access the Internet in the company or at school during the day. Now it is more likely that they access the Internet at home in the daytime. Therefore, the network usage changes in one place can be used to indicate if people in this place actually work from home. In this work, we reuse and analyze Trinocular outages data (around 5.1M responsive /24 blocks) over 6 months to find network usage changes by a new designed algorithm. We apply the algorithm to sets of /24 blocks in several cities and compare the detected network usage changes with real world covid-19 events to verify if the algorithm can capture the changes reacting to the Covid-19 pandemic. By applying the algorithm to all measurable /24 blocks to detect network usages changes, we conclude that network usage can be an indicator of the reaction to the Covid-19 pandemic."
+,}
+
+@Misc{DIINER19a,
+        author =     "DIINER",
+        title =      "{DNS}, Identity, and {Internet} Naming for Experimentation and Research",
+        howpublished = "project website \url{https://ant.isi.edu/diiner/}",
+        year =       2018,
+        keywords =   "diiner project website",
+        url =        "https://ant.isi.edu/diiner/",
+}
+
+@Misc{Google21a,
+        author =     "Google",
+        title =      "Google {IPv6}",
+        howpublished = "Web page \url{https://www.google.com/ipv6/}",
+        month =      dec,
+        year =       2021,
+        location =   "johnh: pafile",
+        keywords =   "ipv6 usage, 35\% of users",
+        url =        "https://www.google.com/intl/en/ipv6/statistics.html",
 }
 
