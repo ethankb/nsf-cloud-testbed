@@ -1304,6 +1304,74 @@ ISSN={1063-6692},}
   year={2015}
 }
 
+@inproceedings{edge-fabric,
+AUTHOR={Schlinker, Brandon and Kim, Hyojeong and Cui, Timothy and Katz-Bassett, Ethan and Madhyastha, Harsha V. and Cunha, Italo and Quinn, James and Hasan, Saif and Lapukhov, Petr and Zeng, Hongyi},
+TITLE={Engineering Egress with Edge Fabric: Steering Oceans of Content to the World},
+YEAR={2017},
+URL={https://doi.org/10.1145/3098822.3098853},
+BOOKTITLE={Proceedings of the Conference of the ACM Special Interest Group on Data Communication},
+KEYWORDS={Software Defined Networking, Content Distribution Network, Internet Routing, Border Gateway Protocol, Traffic Engineering},
+SERIES={SIGCOMM '17}
+}
+
+@inproceedings{peering-conext,
+  AUTHOR=       {Schlinker, Brandon and Arnold, Todd and Cunha,
+                  {\'I}talo and Katz-Bassett, Ethan},
+  TITLE=
+                  {PEERING: Virtualizing BGP at the Edge for Research},
+  BOOKTITLE=    {Proceedings of the Conference on emerging Networking
+                  EXperiments and Technologies},
+  SERIES=       {CoNEXT '19},
+  YEAR=        {2019},
+  URL={https://doi.org/10.1145/3359989.3365414}
+}
+
+@InProceedings{xu15proxies,
+author="Xu, Xing
+and Jiang, Yurong
+and Flach, Tobias
+and Katz-Bassett, Ethan
+and Choffnes, David
+and Govindan, Ramesh",
+editor="Mirkovic, Jelena
+and Liu, Yong",
+title="Investigating Transparent Web Proxies in Cellular Networks",
+booktitle="Passive and Active Measurement",
+year="2015",
+publisher="Springer International Publishing",
+address="Cham",
+pages="262--276",
+abstract="People increasingly use mobile devices as their primary means to access the Internet. While it is well known that cellular network operators employ middleboxes, the details of their behavior and their impact on Web performance are poorly understood. This paper presents an analysis of proxy behavior and how transparent Web proxies interact with HTTP traffic in four major US cell carriers. We find that all four carriers use these proxies to interpose on HTTP traffic, but they vary in terms of whether they perform object caching, traffic redirection, image compression, and connection reuse. For example, some transparent proxies unilaterally lower the quality of images, which improves object fetch time but may hurt user satisfaction. We also find that these proxies do not necessarily enhance performance for mobile Web workloads in terms of object fetch times; namely, we observe noticeable benefits only when flow sizes are large and the path between the server and proxy exhibits large latency and/or loss.",
+isbn="978-3-319-15509-8"
+}
+
+@inproceedings{hu14cloud,
+author = {Hu, Zi and Zhu, Liang and Ardi, Calvin and Katz-Bassett, Ethan and Madhyastha, Harsha and Heidemann, John and Yu, Minlan},
+year = {2014},
+month = {03},
+pages = {119-130},
+title = {The Need for End-to-End Evaluation of Cloud Availability},
+doi = {10.1007/978-3-319-04918-2_12},
+booktitle={15th International Conference on Passive and Active Network Measurement}
+}
+
+
+@inproceedings{policing,
+  AUTHOR=       {Flach, Tobias and Papageorge, Pavlos and Terzis, Andreas and Pedrosa, Luis and Cheng, Yuchung and Karim, Tayeb and Katz-Bassett, Ethan and Govindan, Ramesh},
+  TITLE="An internet-Wide Analysis of Traffic Policing",
+  YEAR=        {2016},
+  URL="https://dl.acm.org/citation.cfm?id=2934873",
+  BOOKTITLE=    {Proceedings of the ACM Special Interest Group on Data Communication (SIGCOMM)},
+  SERIES={SIGCOMM '16},
+}
+
+@misc{wasfoot:peering-publications,
+AUTHOR={{Columbia University}},
+title = {{PEERING Publications}},
+howpublished = {Online: \url{https://peering.ee.columbia.edu/people/}},
+note="Accessed: August 2021"
+}
+
 % APNIC population by AS
 @misc{apnic-population,
   title={How Big is that Network},
@@ -2013,23 +2081,6 @@ economics relate to networks.
 }
 
 
-@TechReport{Song21a,
-        author =        "Xiao Song and John Heidemann",
-        title =         "Measuring the Internet during Covid-19 to Evaluate Work-from-Home",
-        institution =   "USC/ISI",
-        year =          2021,
-	sortdate = 	"2021-02-17", 
-	project = "ant, minceq, eieio",
-	jsubject = "topology_modeling",
-        location =   "johnh: pafile",
-	url =		"https://www.isi.edu/%7ejohnh/PAPERS/Song21a.html",
-	pdfurl =	"https://www.isi.edu/%7ejohnh/PAPERS/Song21a.pdf",
-	otherurl = "https://arxiv.org/abs/2102.07433",
-        number =     "arXiv:2102.07433v2 [cs.NI]",
-        month =      feb,
-        keywords =   "internet, address scans, covid-19, poster, trinocular",
-	abstract = "The Covid-19 pandemic has radically changed our lives. Under different circumstances, people react to it in various ways. One way is to work-from-home since lockdown has been announced in many regions around the world. For some places, however, we don't know if people really work from home due to the lack of information. Since there are lots of uncertainties, it would be helpful for us to understand what really happen in these places if we can detect the reaction to the Covid-19 pandemic. Working from home indicates that people have changed the way they interact with the Internet. People used to access the Internet in the company or at school during the day. Now it is more likely that they access the Internet at home in the daytime. Therefore, the network usage changes in one place can be used to indicate if people in this place actually work from home. In this work, we reuse and analyze Trinocular outages data (around 5.1M responsive /24 blocks) over 6 months to find network usage changes by a new designed algorithm. We apply the algorithm to sets of /24 blocks in several cities and compare the detected network usage changes with real world covid-19 events to verify if the algorithm can capture the changes reacting to the Covid-19 pandemic. By applying the algorithm to all measurable /24 blocks to detect network usages changes, we conclude that network usage can be an indicator of the reaction to the Covid-19 pandemic."
-,}
 
 @InProceedings{Bartlett07d,
 	  author = 	"Genevieve Bartlett and John Heidemann and Christos Papadopoulos",
