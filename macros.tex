@@ -75,4 +75,12 @@
 \theoremstyle{TaskStyle}
 \newtheorem{task}{Task}
 
+%
+% make autoref use \S
+%
+% next hack from http://phaseportrait.blogspot.com/2009/03/remoing-hyperrefs-space-inside-autoref.html
+\def\Snospace~{\S{}}   %%% this version is slightly smaller, if we're space limited
+\renewcommand{\sectionautorefname}{\Snospace}%  (or {Section}%
+\renewcommand{\subsectionautorefname}{\Snospace}%
+\renewcommand{\subsubsectionautorefname}{\Snospace}%
 \newcommand{\taskautorefname}{Task}%
