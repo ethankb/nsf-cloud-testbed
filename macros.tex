@@ -58,3 +58,19 @@
 \newcommand{\xmark}{\color{BrickRed}\ding{55}}%
 
 \newcommand{\mli}[1]{\mathit{#1}}
+
+%
+% this is for tasks so we can enumerate and cross-reference them
+%
+\newtheoremstyle{TaskStyle}
+  {\topsep} % Space above
+  {0pt} % Space below
+  {} % Body font
+  {} % Indent amount
+  {\bfseries} % Theorem head font
+  {.} % Punctuation after theorem head
+  {.5em} % Space after theorem head
+  {} % Theorem head spec (can be left empty, meaning `normal')
+\theoremstyle{TaskStyle}
+\newtheorem{task}{Task}
+
