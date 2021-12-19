@@ -29,6 +29,7 @@
 @string{pub-ieee = "{IEEE}"};
 @string{acm-sigcomm = " {ACM} SIGCOMM Conference "};   # as in the conference
 @string{acm-ccr = "{ACM} Computer Communication Review"};
+@string{acm-hotnets = " ACM Workshop on Hot Topics in Networks "};
 
 % Journals
 
@@ -2379,4 +2380,19 @@ data."
         keywords =   "internet, address scans, covid-19, poster, trinocular",
 	abstract = "The Covid-19 pandemic has radically changed our lives. Under different circumstances, people react to it in various ways. One way is to work-from-home since lockdown has been announced in many regions around the world. For some places, however, we don't know if people really work from home due to the lack of information. Since there are lots of uncertainties, it would be helpful for us to understand what really happen in these places if we can detect the reaction to the Covid-19 pandemic. Working from home indicates that people have changed the way they interact with the Internet. People used to access the Internet in the company or at school during the day. Now it is more likely that they access the Internet at home in the daytime. Therefore, the network usage changes in one place can be used to indicate if people in this place actually work from home. In this work, we reuse and analyze Trinocular outages data (around 5.1M responsive /24 blocks) over 6 months to find network usage changes by a new designed algorithm. We apply the algorithm to sets of /24 blocks in several cities and compare the detected network usage changes with real world covid-19 events to verify if the algorithm can capture the changes reacting to the Covid-19 pandemic. By applying the algorithm to all measurable /24 blocks to detect network usages changes, we conclude that network usage can be an indicator of the reaction to the Covid-19 pandemic."
 ,}
+
+@InProceedings{Koch21b,
+        author =        "Thomas Koch and Weifan Jiang and Tao Luo and
+ Petros Gigis and Yunfan Zhang and Kevin Vermeulen
+ and Emile Aben and Matt Calder and Ethan
+ Katz-Bassett and Lefteris Manassakis and Georgios Smaragdakis and Narseo Vallina-Rodriguez",
+ title = "Towards a traffic map of the Internet: Connecting the dots between popular services and users",
+        booktitle =     proc # acm-hotnets,
+        year =          2021,
+        address =    "Virtual Event",
+        publisher =  pub-acm,
+        location =   "johnh: pafile",
+        keywords =   "user map, service  map, traffic map",
+        doi =        "https://doi.org/10.1145/3484266.3487371",
+}
 
