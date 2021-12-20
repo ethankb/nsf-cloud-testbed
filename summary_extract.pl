@@ -31,6 +31,8 @@ while (<>) {
         $state = $AFTER_SUMMARY;
         next;
     };
+    # bf => uppercase
+    s/\\textbf\{([^}]+)\}/uc($1)/ge;
     # clean up different kinds of latex
     next if (/^ *%/); 
     s/~*\\(reviewfix|cite)\{[^}]*\}//g;
