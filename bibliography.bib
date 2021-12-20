@@ -21,6 +21,7 @@
 %
 % these definitions are from johnh's bib:
 %
+@string{ieee-tnsm = " {IEEE} Transactions on Network and Service Management"};
 @string{acm-imc = " ACM Internet Measurement Conference"};
 @string{proc = "Proceedings of the "};
 @string{pub-acm = "{ACM}"};
@@ -2462,4 +2463,56 @@ contributions from Ryan Bogutz, Dominik Staros, Abdulla Alwabel, and
 Aqib Nisar.
 ",
 }
+
+@Article{Wei18a,
+	author = 	"Lan Wei and John Heidemann",
+	title = 	"Does Anycast Hang up on You (UDP and TCP)?",
+        journal =       ieee-tnsm,
+        year =          2018,
+	location = 	"johnh: pafile",
+	keywords = 	"passive observation, internet census",
+	url =		"https://www.isi.edu/%7ejohnh/PAPERS/Wei18a.html",
+	pdfurl =	"https://www.isi.edu/%7ejohnh/PAPERS/Wei18a.pdf",
+	xxxblogurl = "https://ant.isi.edu/blog/?p=1007-xxx",
+	myorganization =	usc-isi,
+	sortdate = 	"2018-02-11", 
+	Project = "ant, retrofuturebridge, lacrend, researchroot, nipet",
+	jsubject = "network_security",
+        volume =     "15",
+        number =     "2",
+        pages =      "707--717",
+        month =      feb,
+        oldnote =       "Accepted for publication Feb. 2018",
+	abstract = "Anycast-based services today are widely used commercially, with
+several major providers serving thousands of important
+websites. However, to our knowledge, there has been only limited study
+of how often anycast fails because routing changes interrupt
+connections between users and their current anycast site. While the
+commercial success of anycast CDNs means anycast usually works well,
+do some users end up shut out of anycast? In this paper we examine
+data from more than 9000 geographically distributed vantage points
+(VPs) to 11 anycast services to evaluate this question. Our
+contribution is the analysis of this data to provide the first
+quantification of this problem, and to explore where and why it
+occurs. We see that about 1\% of VPs are \emph{anycast unstable},
+reaching a different anycast site frequently (sometimes every
+query). Flips back and forth between two sites in 10 seconds are
+observed in selected experiments for given service and VPs. Moreover,
+we show that anycast instability is \emph{persistent} for some VPs---a
+few VPs never see a stable connections to certain anycast services
+during a week or even longer. The vast majority of VPs only saw
+unstable routing towards one or two services instead of instability
+with all services, suggesting the cause of the instability lies
+somewhere in the path to the anycast sites. We point out that for
+highly-unstable VPs, their probability to hit a given site is
+constant, suggesting load balancing might be the cause to anycast
+routing flipping. Finally, we directly examine TCP flipping and show
+that it is much rarer than UDP flipping, but does occur in about
+0.15\% (VP, letter) combinations. Moreover, we show concrete cases in
+which TCP connection timeout in anycast connection due to per-packet
+flipping. Our findings confirm the common wisdom that anycast almost
+always works well, but provide evidence that a small number of
+locations in the Internet where specific anycast services are never
+stable."
+,}
 
