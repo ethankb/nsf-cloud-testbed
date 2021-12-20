@@ -71,14 +71,12 @@ spell: $(NAME).tex
 	cat $(NAME).tex | aspell list | sort -u | aspell -a
 
 
-summary.txt: paper.tex Makefile
-	< paper.tex sed -n  '/summary_start/,/summary_end/p' | \
-		sed -e '/^ *%/d' -e 's/~*\\\(reviewfix\|cite\){[^}]*}//g' -e 's/%.*$$//' -e 's/\\\(textbf\|emph\|SummarySpace\|url\)//g' -e 's/\\end{small}//' -e 's/^ *//' -e 's/\(``\|'"''"'\)/"/g' | \
-		sed -e 's/~/ /g' | \
+summary.txt: nsf-internet-traffic-map.tex Makefile
+	< nsf-internet-traffic-map.tex perl summary_extract.pl | \
 		fmt -w 2000 | \
 		sed -e 's/  */ /g' -e '/^$$/d' -e 's/[{}]//g' -e 's/^/... /' > $@
 #		sed -e 's/  */ /g' -e 's/[{}]//g' > $@
 
-summary_count: project_summary.txt
-	wc -c project_summary.txt
+summary_count: summary.txt
+	wc -c $<
 
