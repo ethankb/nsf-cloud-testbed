@@ -31,8 +31,9 @@
 %\newcommand{\objective}[1]{\refstepcounter{objective} Objective}
 \newcommand{\objective}[1]{#1}
 \newcommand{\objectivee}{\refstepcounter{objective}}
-%\newcounter{subobjective}
-%\newcommand{\subobjective}[1]{\refstepcounter{objective} Objective \theobjective}
+\newcounter{subobjective}[objective]
+\renewcommand\thesubobjective{\Alph{objective}.\arabic{subobjective}}
+\newcommand{\subobjectivee}{\refstepcounter{subobjective}}
 % \refstepcounter{section}\theobjective: #1}}
 \newtheorem{tasks}{{Task}}[objective]
 \newcommand{\taske}[1]{{\tasks #1 }}
