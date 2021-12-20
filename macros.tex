@@ -26,7 +26,10 @@
 \newcommand\dlte[2]{{\vtop{\hbox{\strut #1}\hbox{\strut #2}}}} % double line table element
 \newcommand\tlte[3]{{\vtop{\hbox{\strut #1}\hbox{\strut #2}\hbox{\strut #3}}}} % triple line table element
 
-
+\newcounter{objective}
+\newcommand{\objective}[1]{\section*{Objective \refstepcounter{objective} 
+\refstepcounter{section}\theobjective: #1}}
+\newtheorem{task}{Task}[section]
 
 % terms
 \newcommand\oldrevtr{\textsc{revtr 1.0}\xspace}
