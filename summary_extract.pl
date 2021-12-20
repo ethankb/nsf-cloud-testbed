@@ -4,10 +4,20 @@
 # summary_extract.pl
 #
 
+#
+# This ugly script takes latex in and spits out clean-ish ASCII,
+# suitable for cut-and-paste into NSF's web form.
+#
+# At one point it was sed, but then we added enumerate
+# which forces a stateful scripting language.
+#
+
 my($BEFORE_SUMMARY, $IN_SUMMARY, $AFTER_SUMMARY) = (0..10);
 my($state) = $BEFORE_SUMMARY;
 my($enum_counter) = 0;
 while (<>) {
+    # extract the summary, bounded by \SummaryStartHere and \SummaryEndHere
+    # (we assume those are defined to be null commands in macros.tex).
     if ($state == $BEFORE_SUMMARY) {
         if (/\\SummaryStartHere/) {
             $state = $IN_SUMMARY;
@@ -21,6 +31,7 @@ while (<>) {
         $state = $AFTER_SUMMARY;
         next;
     };
+    # clean up different kinds of latex
     next if (/^ *%/); 
     s/~*\\(reviewfix|cite)\{[^}]*\}//g;
     s/%.*$$//;
@@ -29,6 +40,7 @@ while (<>) {
     s/^ *//;
     s/(``|'')/"/g;
     s/~/ /g;
+    # recreate enumeration (the whole point of this script)
     if (/\\begin\{enumerate\}/) {
         $enum_counter = 0;
         next;
@@ -44,7 +56,6 @@ while (<>) {
         print "\n$enum_counter. ";
         next;
     };
-    # fancy enumeration
     print;
 };
 
