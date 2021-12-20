@@ -27,9 +27,14 @@
 \newcommand\tlte[3]{{\vtop{\hbox{\strut #1}\hbox{\strut #2}\hbox{\strut #3}}}} % triple line table element
 
 \newcounter{objective}
-\newcommand{\objective}[1]{\section*{Objective \refstepcounter{objective} 
-\refstepcounter{section}\theobjective: #1}}
-\newtheorem{tasks}{{Task}}[subsection]
+\renewcommand\theobjective{\Alph{objective}}
+%\newcommand{\objective}[1]{\refstepcounter{objective} Objective}
+\newcommand{\objective}[1]{#1}
+\newcommand{\objectivee}{\refstepcounter{objective}}
+%\newcounter{subobjective}
+%\newcommand{\subobjective}[1]{\refstepcounter{objective} Objective \theobjective}
+% \refstepcounter{section}\theobjective: #1}}
+\newtheorem{tasks}{{Task}}[objective]
 \newcommand{\taske}[1]{{\tasks #1 }}
 
 % terms
