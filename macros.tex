@@ -38,6 +38,20 @@
 \newcommand{\subobjectivee}{\refstepcounter{subobjective}}
 \newcommand\SubobjectiveLabel{Research Question \thesubobjective:\xspace}
 % \refstepcounter{section}\theobjective: #1}}
+
+%
+% this is for tasks so we can enumerate and cross-reference them
+%
+\newtheoremstyle{TaskStyle}
+  {0.75ex} % Space above
+  {0pt} % Space below
+  {\bfseries} % Body font
+  {} % Indent amount
+  {\bfseries} % Theorem head font
+  {.} % Punctuation after theorem head
+  {.5em} % Space after theorem head
+  {} % Theorem head spec (can be left empty, meaning `normal')
+\theoremstyle{TaskStyle}
 \newtheorem{tasks}{{Task}}[subobjective]
 \newcommand{\taske}[1]{{\tasks #1 }}
 
@@ -74,21 +88,6 @@
 \newcommand{\xmark}{\color{BrickRed}\ding{55}}%
 
 \newcommand{\mli}[1]{\mathit{#1}}
-
-%
-% this is for tasks so we can enumerate and cross-reference them
-%
-\newtheoremstyle{TaskStyle}
-  {0.5ex} % Space above
-  {0pt} % Space below
-  {\bfseries} % Body font
-  {} % Indent amount
-  {\bfseries} % Theorem head font
-  {.} % Punctuation after theorem head
-  {.5em} % Space after theorem head
-  {} % Theorem head spec (can be left empty, meaning `normal')
-\theoremstyle{TaskStyle}
-\newtheorem{task}{Task}
 
 %
 % make autoref use \S
