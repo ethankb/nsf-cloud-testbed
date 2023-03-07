@@ -1,12 +1,12 @@
 # NB: By default fetch the paper from Google docs every time
 # use "make recompile" to avoid the extra fetch
 
-NAME=nsf-internet-traffic-map
+NAME=nsf-cloud-experiment-tool
 TARGET=$(NAME).pdf
 
 # Change the line below to contain an export URL.
 # Make sure the sharing mode on the Doc is set to "anyone with link can view"
-DOCS_LINK=https://docs.google.com/document/d/1YZHo4ShCXUM_IkR-u2TQAq_lza_P-i4C4NyGfcAe0bk/export?format=txt
+DOCS_LINK=https://docs.google.com/document/d/1glitCYgYJMNAAyG5hDuQRBfjAcUmiuz_C-oAabi3ZfQ/export?format=txt
 
 # This line should not change; however, you can customize the template.tex for the conference
 #
