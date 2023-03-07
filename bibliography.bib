@@ -1,4 +1,4 @@
-%%% ====================================================================
+%% ====================================================================
 %%%  BibTeX-file{
 %%%     author          = "Gerry Murray",
 %%%     version         = "1.2",
@@ -29,7 +29,7 @@
 @string{pub-ieee = "{IEEE}"};
 @string{acm-sigcomm = " {ACM} SIGCOMM Conference "};   # as in the conference
 @string{acm-ccr = "{ACM} Computer Communication Review"};
-@string{acm-hotnets = " ACM Workshop on Hot Topics in Networks "};
+@string{acm-hotnets = "{ACM} {W}orkshop on Hot Topics in Networks"};
 
 % Journals
 
@@ -90,8 +90,15 @@
  @String{SIGCOMM = "Proc. ACM SIGCOMM"}
  @String{SIGMETRICS = "Proc. ACM SIGMETRICS"}
  @String{IMC = "Proc. ACM IMC"}
-
+ @String{NSDI = "Proc. USENIX NSDI"}
+ @string{OSDI = "Proc. USENIX OSDI"}
+ @String{ASPLOS = "Proc. ACM ASPLOS"}
+ @STRING{HOTNETS = "Proc. ACM HotNets"}
+ @string{ANCS = "Proc. ACM/IEEE ANCS"}
  @String{INFOCOM = "Proc. IEEE INFOCOM"}
+ @string{CONEXT = "Proc. ACM CoNEXT"}
+ @string{TON = "IEEE/ACM ToN"}
+ @string{TOCS = "ACM ToCS"}
 
  %IEEE
  @String{Computer = "{IEEE} Computer" }
@@ -2689,4 +2696,155 @@ series = {SIGCSE '11}
         location =   "johnh: pafile",
         keywords =   "ip id, router fingerprinting",
         doi =        "https://doi.org/10.1145/3487552.3487848"
+}
+
+@inproceedings {firestone-smartnics,
+  author =       {Daniel Firestone and Andrew Putnam and Sambhrama
+                  Mundkur and Derek Chiou and Alireza Dabagh and Mike
+                  Andrewartha and Hari Angepat and Vivek Bhanu and
+                  Adrian Caulfield and Eric Chung and Harish Kumar
+                  Chandrappa and Somesh Chaturmohta and Matt Humphrey
+                  and Jack Lavier and Norman Lam and Fengfen Liu and
+                  Kalin Ovtcharov and Jitu Padhye and Gautham Popuri
+                  and Shachar Raindel and Tejas Sapre and Mark Shaw
+                  and Gabriel Silva and Madhan Sivakumar and Nisheeth
+                  Srivastava and Anshuman Verma and Qasim Zuhair and
+                  Deepak Bansal and Doug Burger and Kushagra Vaid and
+                  David A. Maltz and Albert Greenberg},
+  title =        {Azure Accelerated Networking: {SmartNICs} in the
+                  Public Cloud},
+  booktitle =    NSDI,
+  year =         {2018},
+}  
+  url =
+                  {https://www.usenix.org/conference/nsdi18/presentation/firestone},
+
+}
+
+@ARTICLE{fastPacketSurvey,
+  author =       {Cerović, Danilo and Del Piccolo, Valentin and
+                  Amamou, Ahmed and Haddadou, Kamel and Pujolle, Guy},
+  journal =      {IEEE Communications Surveys \& Tutorials},
+  title =        {Fast Packet Processing: A Survey},
+  year =         {2018},
+}
+
+@inproceedings{flexnic,
+  author =       {Kaufmann, Antoine and Peter, SImon and Sharma,
+                  Naveen Kr. and Anderson, Thomas and Krishnamurthy,
+                  Arvind},
+  title =        {High Performance Packet Processing with FlexNIC},
+  year =         {2016},
+
+  booktitle =    ASPLOS,
+}
+
+@inproceedings {kalia-rpcs,
+  author =       {Anuj Kalia and Michael Kaminsky and David Andersen},
+  title =        {Datacenter {RPCs} can be General and Fast},
+  booktitle =    NSDI,
+  year =         {2019},
+}
+
+@misc{facebook-katran,
+  author =       {Facebook},
+  title =        {Open-sourcing {K}atran, a scalable network load
+                  balancer},
+  year =         2018,
+  url =
+                  {https://engineering.fb.com/2018/05/22/open-source/open-sourcing-katran-a-scalable-network-load-balancer/}
+}
+
+@inproceedings{abranches-swPacket,
+  author =       {Abranches, Marcelo and Michel, Oliver and Keller,
+                  Eric},
+  title =        {Getting Back What Was Lost in the Era of High-Speed
+                  Software Packet Processing},
+  year =         {2022},
+  booktitle =    HOTNETS
+}
+
+@inproceedings{packetIO,
+  author =       {Gallenmüller, Sebastian and Emmerich, Paul and
+                  Wohlfart, Florian and Raumer, Daniel and Carle,
+                  Georg},
+  booktitle =    ANCS,
+  title =        {Comparison of frameworks for high-performance packet
+                  IO},
+  year =         {2015},
+}
+
+@inproceedings{xdp,
+  author =       {H\o{}iland-J\o{}rgensen, Toke and Brouer, Jesper
+                  Dangaard and Borkmann, Daniel and Fastabend, John
+                  and Herbert, Tom and Ahern, David and Miller, David},
+  title =        {The EXpress Data Path: Fast Programmable Packet
+                  Processing in the Operating System Kernel},
+  year =         {2018},
+  booktitle =    CONEXT
+}
+
+@inproceedings{ebpf-perf,
+  author =       {Scholz, Dominik and Raumer, Daniel and Emmerich,
+                  Paul and Kurtz, Alexander and Lesiak, Krzysztof and
+                  Carle, Georg},
+  booktitle =    {2018 30th International Teletraffic Congress (ITC
+                  30)},
+  title =        {Performance Implications of Packet Filtering with
+                  Linux eBPF},
+  year =         {2018},
+}
+
+@inproceedings{handley-rearch,
+  author =       {Handley, Mark and Raiciu, Costin and Agache,
+                  Alexandru and Voinescu, Andrei and Moore, Andrew
+                  W. and Antichi, Gianni and W\'{o}jcik, Marcin},
+  title =        {Re-Architecting Datacenter Networks and Stacks for
+                  Low Latency and High Performance},
+  year =         {2017},
+  booktitle =    SIGCOMM
+}
+
+@inproceedings{hong-kafe,
+  author =       {Hong, Cheol-Ho and Lee, Kyungwoon and Hwang, Jaehyun
+                  and Park, Hyunchan and Yoo, Chuck},
+  booktitle =    TON,
+  title =        {Kafe: Can OS Kernels Forward Packets Fast Enough for
+                  Software Routers?},
+  year =         {2018},
+}
+
+@misc{cloudflare-xdp-ddos,
+  author =       {Arthur Fabre},
+  title =        {{L4Drop: XDP DDoS Mitigations}},
+  year =         {2018},
+  url =
+                  {https://blog.cloudflare.com/l4drop-xdp-ebpf-based-ddos-mitigations/}
+}
+
+@inproceedings{marinos-netStack,
+  author =       {Marinos, Ilias and Watson, Robert N.M. and Handley,
+                  Mark},
+  title =        {Network Stack Specialization for Performance},
+  year =         {2014},
+  booktitle =    SIGCOMM
+}
+
+@inproceedings {belay-ix,
+  author =       {Adam Belay and George Prekas and Ana Klimovic and
+                  Samuel Grossman and Christos Kozyrakis and Edouard
+                  Bugnion},
+  title =        {{IX}: A Protected Dataplane Operating System for
+                  High Throughput and Low Latency},
+  booktitle =    OSDI,
+  year =         {2014},
+}
+
+@inproceedings{arrakis,
+  author =       {Peter, Simon and Li, Jialin and Zhang, Irene and
+                  Ports, Dan R. K. and Woos, Doug and Krishnamurthy,
+                  Arvind and Anderson, Thomas and Roscoe, Timothy},
+  title =        {Arrakis: The Operating System Is the Control Plane},
+  year =         {2015},
+  booktitle =    TOCS
 }

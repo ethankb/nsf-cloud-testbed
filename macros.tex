@@ -112,3 +112,9 @@
 %
 \newcommand{\SummaryStartHere}{}
 \newcommand{\SummaryEndHere}{}
+
+% In case anyone breaks the build by not including images
+\let\includegraphicsoriginal\includegraphics
+\renewcommand{\includegraphics}[2][width=\textwidth]{
+    \IfFileExists{#2}{\includegraphicsoriginal[#1]{#2}}
+    {\includegraphicsoriginal[#1]{figures/confusedSad.jpg}}}
