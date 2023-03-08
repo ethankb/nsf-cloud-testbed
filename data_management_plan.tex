@@ -34,17 +34,17 @@ To the extent permissible by these guidelines, we plan to make data and software
 
 We will make all of the  publicly (researcher-facing) portions of our software for running experiments freely available through GitHub.  The ``fast path'' packet processing improvements will also be publicly available via Github, and potentially available through the Linux operating system.
 
-We will also make the testing environment for canary experiments publicly available via Github.  However, we will not necessarily make the results of canary experiments publicly available; since experiments are potentially pushing protocol and routing software boundaries there is the potential to identify vulnerabilities within the hardware and software we are testing.  If such a situation should occur (e.g., a router crashes when receiving a particular type or format of announcement), we will work with the experimenter to responsibly the identified issue to the appropriate entity.
+We will also make the testing environment for canary experiments publicly available via Github.  However, we will not necessarily make the results of canary experiments publicly available; since experiments are potentially pushing protocol and routing software boundaries there is the potential to identify vulnerabilities within the hardware and software we are testing.  If such a situation should occur (e.g., a router crashes when receiving a particular type or format of announcement), we will work with the experimenter to responsibly notify the appropriate entity (e.g., router vendor) of the identified issue.
 
 
 
 \parai{Measurement data}.  \sys does not carry user or production traffic, so the measurements and their results are not sensitive.  The measurement platforms mentioned in the proposal--from RIPE Atlas, Reverse Traceroute, and Beegol--each have indiviual methods for storing their measurement data.
 
-Measurements to \sys experiments and prefixes from RIPE Atlas are publicly available via the RIPE Atlas web and python APIs or their Google BigQuery database.  Researchers are able to retrieve the automated traceroutes towards \sys prefixes as well as any researcher initiated measurements via the available methods.
+Measurements to \sys experiments and prefixes from RIPE Atlas are publicly available via the RIPE Atlas web and Python APIs or their Google BigQuery database.  Researchers are able to retrieve the automated traceroutes towards \sys prefixes as well as any researcher initiated measurements via the available methods.
 
-\tbd{Reverse traceroute}
+Reverse traceroute measurements are publicly available via MLab and Google Cloud storage, and MLab makes them available via BigQuery upon request. User-side IP addresses are anonymoized before the data is published. The code is open-sourced on GitHub.
 
-\tbd{Beegol}
+Beegol data will consist of active measurements similar to RIPE Atlas. We will anonymize client-side IP addresses. We will store the data in a format compatible with RIPE Atlas and host it in cloud-storage. 
 
 \parai{Route announcement data}.  There are multiple efforts, such as RouteViews and CAIDA, which log and publicly host BGP messaging data.  We will work with these organizations to determine what set(s) of \sys routes to archive.  There are standardized formats for BGP logging.
 
