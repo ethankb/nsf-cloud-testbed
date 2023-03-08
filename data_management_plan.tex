@@ -1,0 +1,71 @@
+\documentclass[11pt]{article}
+\usepackage{times, hyperref, xspace}
+\textheight 8.5in
+\evensidemargin 0.0in
+\oddsidemargin 0.0in
+\textwidth 6.5in
+\topmargin -.15in
+
+\usepackage{color}
+\newcommand{\revtr}{{\em Reverse Traceroute}\xspace}
+\newcommand{\tp}{{\em Transit Portal}\xspace}
+\newcommand{\sys}{{\textsc{RichPeering}\xspace}}
+\newcommand{\parai}[1]{\smallskip\noindent{\textit {#1}}}
+\newcommand{\tbd[1]}{{\color{red}{\bf TBD: #1}}}
+
+
+\begin{document}
+\begin{center}
+{\LARGE \textbf{Data Management Plan}}
+\end{center}
+
+\bigskip
+\par
+
+The PIs will oversee the Intellectual property and data generated under this project with the assistance of the students working on the project, in accordance with the guidelines and recommendations of the National Science Foundation, Columbia University and U.S. laws and regulations regarding privacy and intellectual property.
+To the extent permissible by these guidelines, we plan to make data and software available to other researchers. The PIs aim to publish the research findings, and share the evaluation results in journal and conference papers, and talks to industry, government and academic audiences. In this document, we describe the types of data that we will collect as part of this project. 
+
+\sys will be open to any academic researchers  who (a) have affiliation with an established research institution and (b) intend to publish their experiments and (c) otherwise follow best-practices for routing experiments. These researchers will request access the systems via the \sys website and interact with \sys via APIs and other means which we will make publicly available.  
+
+\subsection*{Expected Data Produced}
+
+
+\parai{Software and code}.  The proposed work will create code for testing proposed projects against various routers (both hardware and software), deploying experiments to Vultr locations, and to improve packet processing performance in support of \sys.  
+
+We will make all of the  publicly (researcher-facing) portions of our software for running experiments freely available through GitHub.  The ``fast path'' packet processing improvements will also be publicly available via Github, and potentially available through the Linux operating system.
+
+We will also make the testing environment for canary experiments publicly available via Github.  However, we will not necessarily make the results of canary experiments publicly available; since experiments are potentially pushing protocol and routing software boundaries there is the potential to identify vulnerabilities within the hardware and software we are testing.  If such a situation should occur (e.g., a router crashes when receiving a particular type or format of announcement), we will work with the experimenter to responsibly the identified issue to the appropriate entity.
+
+
+
+\parai{Measurement data}.  \sys does not carry user or production traffic, so the measurements and their results are not sensitive.  The measurement platforms mentioned in the proposal--from RIPE Atlas, Reverse Traceroute, and Beegol--each have indiviual methods for storing their measurement data.
+
+Measurements to \sys experiments and prefixes from RIPE Atlas are publicly available via the RIPE Atlas web and python APIs or their Google BigQuery database.  Researchers are able to retrieve the automated traceroutes towards \sys prefixes as well as any researcher initiated measurements via the available methods.
+
+\tbd{Reverse traceroute}
+
+\tbd{Beegol}
+
+\parai{Route announcement data}.  There are multiple efforts, such as RouteViews and CAIDA, which log and publicly host BGP messaging data.  We will work with these organizations to determine what set(s) of \sys routes to archive.  There are standardized formats for BGP logging.
+
+If feasible (in terms of Vultr policies, data volume, and utility/clarity to RouteViews users) to provide the announcements our routers receive from Vultr and the rest of the Internet. This dataset would provide valuable insights into the routes used by a cloud provider and will provide context for how traffic from experiments was routed to the rest of the Internet.  It will also enable the research community to reproduce or at least examine an experiment.
+
+
+
+\parai{Experiment data traffic}.  In addition to the routing and measurement data, \sys experiments also potentially send and receive traffic to and from their assigned prefix(s).
+\sys does not carry user or production traffic, so the traffic itself is not sensitive.  
+However, as the infrastructure providers we will not collect this data.
+Data collection and policies surrounding an individual experiment's data traffic will be up to individual researchers. 
+
+
+
+\subsection*{Policies for Access, Sharing, and Protection}
+
+This project plans to deposit research data in the Columbia University institutional repository called Academic Commons, following guidance by Columbia University Library staff members. This service is provided by Columbia's Center for Digital Research and Scholarship (CDRS), reachable at info@cdrs.columbia.edu. The project will submit both the data and the metadata and other resources to the Academic Commons, in order to make the data accessible for future users.  The current preservation plan for the Academic Commons will be to preserve the data indefinitely, even if a PI is no longer associated with the University. The data acquired and preserved in the context of this project will be further governed by Columbia University's policies pertaining to intellectual property, record retention, and data management. All privacy issues have been addressed by Columbia University policy. For example, the Academic Commons will not accept data that are not DPA, HIPAA, or HITECH compliant. Data will become available at the time of publication of results based upon it.
+
+All data that may contain identifiers of individual devices such as network or MAC addresses will be anonymized before storage and processing. We will also ask any person who downloads our data to agree to an acceptable use condition that prohibits any attempt at de-anonymization. Any usability tests involving human subjects or gathering of data that could identify individuals or their activity will be submitted for Columbia University IRB approval; all PIs working on components possibly involving human subjects have completed human subjects training\footnote{https://www.citiprogram.org} valid at least until June 2023.
+
+In addition, we plan to make appropriate data, reports, presentations, papers, software and other artifacts available, either directly or through pointers through appropriate repositories such as CRAWDAD3 or arXiv.org.
+
+
+\end{document}
