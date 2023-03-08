@@ -1326,9 +1326,7 @@ SERIES={SIGCOMM '17}
                   {\'I}talo and Katz-Bassett, Ethan},
   TITLE=
                   {PEERING: Virtualizing BGP at the Edge for Research},
-  BOOKTITLE=    {Proceedings of the Conference on emerging Networking
-                  EXperiments and Technologies},
-  SERIES=       {CoNEXT '19},
+  BOOKTITLE=    CONEXT,
   YEAR=        {2019},
   URL={https://doi.org/10.1145/3359989.3365414}
 }
@@ -1401,16 +1399,16 @@ note="Accessed: August 2021"
   publisher={APNIC},
   url={https://labs.apnic.net/?p=526}
 }
-@inproceedings{todd-cloud-connectivity,
+@inproceedings{cloud-provider-connectivity,
   title={Cloud provider connectivity in the flat {I}nternet},
   author={Arnold, Todd and He, Jia and Jiang, Weifan and Calder, Matt and Cunha, Italo and Giotsas, Vasileios and Katz-Bassett, Ethan},
-  booktitle={ACM IMC},
+  booktitle=IMC,
   year={2020}
 }
-@inproceedings{todd-wan-performance,
+@inproceedings{private-wan-performance,
   title={({H}ow Much) Does a Private {WAN} Improve Cloud Performance?},
   author={Arnold, Todd and G{\"u}rmeri{\c{c}}liler, Ege and Essig, Georgia and Gupta, Arpit and Calder, Matt and Giotsas, Vasileios and Katz-Bassett, Ethan},
-  booktitle={IEEE INFOCOM},
+  booktitle=INFOCOM,
   year={2020},
 }
 @inproceedings{imc2017-shortcuts,
@@ -1795,7 +1793,7 @@ keywords = {inclusion, under-represented groups, esp, peer-led team learning, in
   booktitle={ACM IMC},
   year={2008}
 }
-@inproceedings{tom-anycast-sigcomm,
+@inproceedings{anycast-in-context,
  title={Anycast in Context: A Tale of Two Systems},
  author={Koch, Thomas and Li, Ke and Ardi, Calvin and Calder, Matt and Heidemann, John and Katz-Bassett, Ethan},
  booktitle={ACM SIGCOMM},
@@ -1810,10 +1808,10 @@ keywords = {inclusion, under-represented groups, esp, peer-led team learning, in
   booktitle={ACM SIGCOMM},
   year={2010},
 }
-@inproceedings{wohlfart2018leveraging,
+@inproceedings{akamai-leveraging-interconnections,
   title={Leveraging interconnections for performance: the serving infrastructure of a large {CDN}},
   author={Wohlfart, Florian and Chatzis, Nikolaos and Dabanoglu, Caglar and Carle, Georg and Willinger, Walter},
-  booktitle={ACM SIGCOMM},
+  booktitle=SIGCOMM,
   year={2018}
 }
 @inproceedings{seven-years-offnets,
@@ -2612,8 +2610,8 @@ stable."
 @inproceedings{facebook-performance,
   title={Internet performance from Facebook's edge},
   author={Schlinker, Brandon and Cunha, Italo and Chiu, Yi-Ching and Sundaresan, Srikanth and Katz-Bassett, Ethan},
-  booktitle={Proceedings of the Internet Measurement Conference},
-  pages={179--194},
+  booktitle=IMC,
+
   year={2019}
 }
 
@@ -2864,4 +2862,245 @@ series = {SIGCSE '11}
   year =         {2022},
   url =
                   {https://www.statista.com/chart/18819/worldwide-market-share-of-leading-cloud-infrastructure-service-providers/}
+}
+
+@inproceedings{espresso,
+  author =       {Yap, K.-K. and Motiwala, M. and Rahe, J. and
+                  Padgett, S. and Holliman, M. and Baldus, G. and
+                  Hines, M. and Kim, T. and Narayanan, A. and Jain,
+                  A. and Lin, V. and Rice, C. and Rogan, B. and Singh,
+                  A. and Tanaka, B. and Verma, M. and Sood, P. and
+                  Tariq, M. and Tierney, M. and Trumic, D. and
+                  Valancius, V. and Ying, C. and Kallahalla, M. and
+                  Koley, B. and Vahdat, A.},
+  title =        {{Taking the Edge off with Espresso: Scale,
+                  Reliability and Programmability for Global Internet
+                  Peering}},
+  booktitle =    SIGCOMM,
+  year =         {2017},
+}
+
+@InProceedings{matt-anycast,
+  author =       {Calder, Matt and Flavel, Ashley and Katz-Bassett,
+                  Ethan and Mahajan, Ratul and Padhye, Jitendra},
+  title =        {{Analyzing the Performance of an Anycast CDN}},
+  booktitle =    IMC,
+  year =         {2015}
+}
+
+@inproceedings{edge-fabric,
+  author =       {Schlinker, B and Kim, H. and Cui, T. and
+                  Katz-Bassett, E. and Madhyastha, H. V. and Cunha,
+                  I. and Quinn, J. and Hasan, S. and Lapukhov, P. and
+                  Zeng, H.},
+  title =        {{Engineering Egress with Edge Fabric: Steering
+                  Oceans of Content to the World}},
+  booktitle =    SIGCOMM,
+  year =         {2017},
+}
+
+@inproceedings{anyopt,
+  title =        {AnyOpt: predicting and optimizing IP Anycast
+                  performance},
+  author =       {Zhang, Xiao and Sen, Tanmoy and Zhang, Zheyuan and
+                  April, Tim and Chandrasekaran, Balakrishnan and
+                  Choffnes, David and Maggs, Bruce M and Shen, Haiying
+                  and Sitaraman, Ramesh K and Yang, Xiaowei},
+  booktitle =    SIGCOMM,
+  year =         {2021}
+}
+
+@inproceedings{fastroute,
+ author = {Ashley Flavel and Pradeepkumar Mani and David Maltz and Nick Holt and Jie Liu and Yingying Chen and Oleg Surmachev},
+ title = {{{F}ast{R}oute: A Scalable Load-Aware Anycast Routing Architecture for Modern {CDN}s}},
+ booktitle = NSDI,
+ year={2015}
+}
+
+@inproceedings{footprint,
+  author =       {Hongqiang Harry Liu and Raajay Viswanathan and Matt
+                  Calder and Aditya Akella and Ratul Mahajan and
+                  Jitendra Padhye and Ming Zhang},
+  title =        {{Efficiently Delivering Online Services over
+                  Integrated Infrastructure}},
+  booktitle =    NSDI,
+  year =         {2016}
+}
+
+@inproceedings{tipsy,
+  title={{TIPSY}: predicting where traffic will ingress a WAN},
+  author={Markovitch, Michael and Agarwal, Sharad and Fonseca, Rodrigo and Beckett, Ryan and Zhang, Chuanji and Atov, Irena and Chaturmohta, Somesh},
+  booktitle=SIGCOMM,
+  year={2022}
+}
+
+@inproceedings{cascara,
+  title={Cost-effective Cloud Edge Traffic Engineering with Cascara.},
+  author={Singh, Rachee and Agarwal, Sharad and Calder, Matt and Bahl, Paramvir},
+  booktitle=NSDI,
+  year={2021}
+}
+
+@inproceedings{jiangchen-imc,
+author = {Zhu, Jiangchen and Vermeulen, Kevin and Cunha, Italo and Katz-Bassett, Ethan and Calder, Matt},
+title = {The Best of Both Worlds: High Availability CDN Routing without Compromising Control},
+year = {2022},
+booktitle = IMC
+}
+
+@inproceedings{internet-scale-reverse-traceroute,
+  author =       {Vermeulen, Kevin and Gurmericliler, Ege and Cunha,
+                  Italo and Choffnes, David and Katz-Bassett, Ethan},
+  title =        {Internet Scale Reverse Traceroute},
+  year =         {2022},
+  booktitle =    IMC
+}
+
+@InProceedings{sung2016robotron,
+  author       = {Sung, Yu-Wei Eric and Tie, Xiaozheng and Wong, Starsky HY and Zeng, Hongyi},
+  title        = {Robotron: Top-down Network Management at Facebook Scale},
+  booktitle    = SIGCOMM,
+  year         = {2016},
+ }
+
+@inproceedings{beating-bgp,
+	author = {T. Arnold and M. Calder and I. Cunha and A. Gupta and
+		H. V. Madhyastha and M. Schapira and E. Katz-Bassett},
+	title = {{Beating BGP is Harder than we Thought}},
+	booktitle = HOTNETS,
+	year = {2019}
+}
+
+@inproceedings{internet-traffic-map,
+  author =       {Koch, Thomas and Jiang, Weifan and Luo, Tao and
+                  Gigis, Petros and Zhang, Yunfan and Vermeulen, Kevin
+                  and Aben, Emile and Calder, Matt and Katz-Bassett,
+                  Ethan and Manassakis, Lefteris and Smaragdakis,
+                  Georgios and Vallina-Rodriguez, Narseo},
+  title =        {Towards a Traffic Map of the Internet: Connecting
+                  the Dots between Popular Services and Users},
+  year =         {2021},
+  booktitle =    HOTNETS
+}
+
+@misc{apnic-as-populations,
+  author =       {\ac{apnic}},
+  title =        {{Visible ASNs: Customer Populations (Est.)}},
+  note =         {\url{https://stats.labs.apnic.net/aspop/}}
+}
+
+@inproceedings{anycast_ppp,
+  title={Internet Anycast: Performance, Problems, \& Potential},
+  author={Li, Zhihao and Levin, Dave and Spring, Neil and Bhattacharjee, Bobby},
+  booktitle=SIGCOMM,
+  year={2018},
+}
+
+@inproceedings{mcquistin2019taming,
+  title={Taming Anycast in the Wild Internet},
+  author={McQuistin, Stephen and Uppu, Sree Priyanka and Flores, Marcel},
+  booktitle=IMC,
+  year={2019},
+}
+
+@inproceedings{bidirectional-anycast-unicast-probing,
+  title={Bidirectional {Anycast/Unicast} Probing ({BAUP}): Optimizing {CDN} Anycast},
+  author={Wei, Lan and Flores, Marcel and Bedi, Harkeerat and Heidemann, John},
+  booktitle={NOMS},
+  year={2020}
+}
+
+@inproceedings{hitlist,
+ author = {X. Fan and J. Heidemann},
+ title = {{Selecting Representative IP Addresses for Internet Topology Studies}},
+ booktitle = IMC,
+ year = {2010}
+}
+
+@Misc{ripe2010duke,
+  author = {Erik Romijn},
+  title  = {RIPE NCC and Duke University BGP Experiment},
+  month  = {aug},
+  year   = {2010},
+  url    = {https://labs.ripe.net/Members/erik/ripe-ncc-and-duke-university-bgp-experiment},
+}
+
+@misc{cloudlab,
+  author = {CloudLab},
+  note =          {\url{http://www.cloudlab.us/}},
+  year = {2019}
+}
+
+@article{planetflow,
+ author = {Huang, Mark and Bavier, Andy and Peterson, Larry},
+ title = {PlanetFlow: Maintaining Accountability for Network Services},
+ journal = {SIGOPS Oper. Syst. Rev.},
+ year = {2006},
+}
+
+@Misc{rfc6to4,
+  author       = {B. Carpenter and K. Moore},
+  title        = {{Connection of IPv6 Domains via IPv4 Clouds}},
+  howpublished = {RFC3056},
+  month        = {feb},
+  year         = {2005},
+}
+
+@inproceedings{katz2012lifeguard,
+ author = {Katz-Bassett, Ethan and Scott, Colin and Choffnes, David R. and Cunha, \'{I}talo and Valancius, Vytautas and Feamster, Nick and Madhyastha, Harsha V. and Anderson, Thomas and Krishnamurthy, Arvind},
+ title = {{LIFEGUARD}: Practical Repair of Persistent Route Failures},
+ series = SIGCOMM,
+ year = 2012
+
+}
+
+@article{fonseca2021identifying,
+  author =       {Osvaldo Fonseca and Italo Cunha and Elverton Fazzion
+                  and Wagner Meira Jr. and Brivaldo Jr. and Ronaldo
+                  A. Ferreira and Ethan Katz-Bassett},
+  title =        {{Identifying Networks Vulnerable to IP Spoofing}},
+  booktitle =    TNSM,
+  volume =       {},
+  number =       {},
+  pages =        {1--14},
+  year =         {2021}
+}
+
+@inproceedings{smith20poisoning,
+  author =       {J. M. Smith, K. Birkeland, T. McDaniel,
+                  M. Schuchard},
+  title =        {{Withdrawing the BGP Re-Routing Curtain:
+                  Understanding the Security Impact of BGP Poisoning
+                  through Real-World Measurements}},
+  booktitle =    NDSS,
+  year =         {2020},
+}
+
+@inproceedings{gray2020bgp,
+  author =       {Gray, Caitlin and Mosig, Clemens and Bush, Randy and
+                  Pelsser, Cristel and Roughan, Matthew and Schmidt,
+                  Thomas C. and Wahlisch, Matthias},
+  title =        {BGP Beacons, Network Tomography, and Bayesian
+                  Computation to Locate Route Flap Damping},
+  year =         {2020},
+  booktitle =    IMC
+}
+
+@inproceedings{google-b4,
+  author =       {Jain, S. and Kumar, A. and Mandal, S. and Ong,
+                  J. and Poutievski, L.  and Singh, A. and Venkata,
+                  S. and Wanderer, J. and Zhou, J. and Zhu, M. and
+                  Zolla, J. and H\"{o}lzle, U. and Stuart, S. and
+                  Vahdat, A.},
+  title =        {{B4: Experience with a Globally-deployed Software
+                  Defined Wan}},
+  booktitle =    SIGCOMM,
+  year =         {2013},
+}
+
+@inproceedings{microsoft-swan,
+ author = {Hong, Chi-Yao and Kandula, Srikanth and Mahajan, Ratul and Zhang, Ming and Gill, Vijay and Nanduri, Mohan and Wattenhofer, Roger},
+ title = {{Achieving High Utilization with Software-driven WAN}},
+ booktitle = SIGCOMM,
+ year = {2013},
 }
